@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    border-bottom: 1px solid #EBEBEB;
+    width: 100%;
+    height: 132px;
+}
+
+header > div {
+    width: 1066px;
+    height: 100%;
+    position: relative;
+    margin: 0 0 0 30px;
+    font-family: 'Product Sans Regular', Arial, Helvetica, sans-serif;
+}
+
+    header > div > img {
+        width: 100px;
+        height: auto;
+        margin-top: 35px;
+        float: left;
+        filter: drop-shadow(0 0 15px rgba(151, 151, 151, 0.75));
+    }
+    
+    header > div > ul {
+        position: absolute;
+        bottom: 0;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+
+        header > div > ul > li {
+            display: inline-block;
+            margin-right: 5px;
+        }
+
+        header > div > ul > li:last-child {
+            margin-right: 0;
+        }
+
+        header > div > ul > li a {
+            display: inline-block;
+            height: 38px;
+            line-height: 38px;
+            font-size: 14px;
+            color: #5F6368;
+            border-bottom: 3px solid transparent;
+        }
+
+            header > div > ul > li a i {
+                margin: 0 3px 0 5px;
+            }
+
+            header > div > ul > li a span {
+                margin: 0 5px 0 0;
+            }
+
+        header > div > ul > li a:hover {
+            border-bottom: 3px solid #2F73E8;
+            text-decoration: none;
+        }
+
+main > div {
+    width: 1066px;
+    height: 150px;
+    margin: 0 0 0 30px;
+    background-color: red;
+}
+
+/* Stage 2 (Enabling variable left/right margins on the page) */
+@media only screen and (min-width: 1120px) {
+    main > div {
+        margin: 0 auto 0 auto;
+        background-color: green;
+    }
+}
+
+/* Stage 3 (For large displays only) */
+@media only screen and (min-width: 1300px) {
+    main > div {
+        width: 1086px;
+        margin: 0 auto 0 180px;
+        background-color: orange;
+    }
+}

@@ -1,0 +1,6 @@
+@font-face {
+    font-family: 'Product Sans Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Product Sans Regular'), url('../webfonts/ProductSans-Regular.woff') format('woff');
+}
