@@ -31,6 +31,52 @@ header > div {
         float: left;
         filter: drop-shadow(0 0 15px rgba(151, 151, 151, 0.75));
     }
+
+    header > div > form {
+        display: inline-block;
+        position: relative;
+        top: 25px;
+        padding: 3px;
+        margin-left: 50px;
+        border: 1px solid #F6F6F7;
+        background-color: #FFF;
+        border-radius: 40px;
+        filter: drop-shadow(0 0 10px rgba(151, 151, 151, 0.75));
+    }
+
+        header > div > form input {
+            display: inline-block;
+            height: 39px;
+            width: 380px;
+            margin: 0 10px 0 20px;
+            padding: 0;
+            line-height: 39px;
+            font-size: 16px;
+            border: none;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+            header > div > form input:focus {
+                outline: none;
+            }
+
+            header > div > form input:disabled {
+                color: #000 !important;
+                background-color: #FFF !important;
+            }
+
+        header > div > form button {
+            position: relative;
+            right: 10px;
+            border: none;
+            border-left: 1px solid #DFE1E5;
+            padding: 4px 0 4px 10px;
+            margin: 0 5px 0 10px;
+            color: #2F73E8;
+            font-size: 18px;
+            background-color: transparent;
+
+        }
     
     header > div > ul {
         position: absolute;
@@ -59,7 +105,7 @@ header > div {
         }
 
             header > div > ul > li a i {
-                margin: 0 3px 0 5px;
+                margin: 0 5px 0 5px;
             }
 
             header > div > ul > li a span {
@@ -80,7 +126,7 @@ main > div {
 
 /* Stage 2 (Enabling variable left/right margins on the page) */
 @media only screen and (min-width: 1120px) {
-    main > div {
+    main > div, header > div {
         margin: 0 auto 0 auto;
         background-color: green;
     }
@@ -88,9 +134,13 @@ main > div {
 
 /* Stage 3 (For large displays only) */
 @media only screen and (min-width: 1300px) {
-    main > div {
+    main > div, header > div {
         width: 1086px;
         margin: 0 auto 0 180px;
         background-color: orange;
+    }
+
+    header > div > form input {
+        width: 573px;
     }
 }
