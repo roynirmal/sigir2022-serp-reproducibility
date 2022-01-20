@@ -1,6 +1,4 @@
-div.result-organic {
-    
-}
+/* Organic Result (including subresults, which are indented) */
 
 div.result-organic span.url {
     display: block;
@@ -40,3 +38,21 @@ div.result-organic span.snippet {
     color: #5F6368;
     word-wrap: break-word;
 }
+
+div.result-organic > div.subresults {
+    margin-left: 16px;
+}
+
+div.result-organic > div.subresults > span {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+div.result-organic > div.subresults > span.more {
+    display: block;
+    font-size: 14px;
+}
+
+    div.result-organic > div.subresults > span.more::after {
+        content: "\00a0\203a\203a";
+    }

@@ -3,10 +3,12 @@ body {
 }
 
 a {
+    color: #1A0DAB;
     text-decoration: none;
 }
 
-a:hover {
+a:visited {
+    color: #660099;
     text-decoration: underline;
 }
 
@@ -111,6 +113,10 @@ header > div {
             header > div > ul > li a span {
                 margin: 0 5px 0 0;
             }
+        
+        header > div > ul > li a:visited {
+            color: #5F6368;
+        }
 
         header > div > ul > li a.selected {
             border-bottom: 3px solid #2F73E8;
@@ -163,7 +169,7 @@ main > div {
 
     /* For each item on the left rail, add a gap at the bottom */
     main > div > div > div.left-container > div {
-        margin-bottom: 10px;
+        margin-bottom: 30px;
     }
 
 /* Stage 2 (Enabling variable left/right margins on the page) */
