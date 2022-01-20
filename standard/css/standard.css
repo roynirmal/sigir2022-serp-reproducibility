@@ -112,23 +112,40 @@ header > div {
                 margin: 0 5px 0 0;
             }
 
-        header > div > ul > li a:hover {
+        header > div > ul > li a.selected {
             border-bottom: 3px solid #2F73E8;
+        }
+
+        header > div > ul > li a:hover {
             text-decoration: none;
+        }
+
+        header > div span.right {
+            position: absolute;
+            right: 0;
+            top: 25px;
+            font-size: 14px;
+            color: #5F6368;
         }
 
 main > div {
     width: 1066px;
     height: 150px;
     margin: 0 0 0 30px;
-    background-color: red;
 }
+
+    main > div div.stats {
+        height: 43px;
+        line-height: 43px;
+        color: #70757A;
+        font-size: 14px;
+        font-family: 'Product Sans Regular', Arial, Helvetica, sans-serif;
+    }
 
 /* Stage 2 (Enabling variable left/right margins on the page) */
 @media only screen and (min-width: 1120px) {
     main > div, header > div {
         margin: 0 auto 0 auto;
-        background-color: green;
     }
 }
 
