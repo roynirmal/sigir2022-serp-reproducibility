@@ -12,6 +12,10 @@ a:visited {
     text-decoration: underline;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
 header {
     border-bottom: 1px solid #EBEBEB;
     width: 100%;
@@ -164,7 +168,6 @@ main > div {
         order: 2;
         width: 370px;
         flex-shrink: 0;
-        background-color: orange;
     }
 
     /* For each item on the left rail, add a gap at the bottom */

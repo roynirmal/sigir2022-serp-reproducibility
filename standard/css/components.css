@@ -60,3 +60,131 @@ div.result-organic > div.subresults > span.more {
     div.result-organic > div.subresults > span.more::after {
         content: "\00a0\203a\203a";
     }
+
+/* Box Element Container */
+
+div.box-container {
+    border: 1px solid #DFE1E5;
+    border-radius: 8px;
+}
+
+/* Entity Card */
+
+div.entity-card {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+div.entity-card .padding {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+div.entity-card > h3 {
+    padding: 12px 0 4px 0;
+    position: relative;
+    margin: 0;
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 36px;
+    color: #202124;
+    word-wrap: break-word;
+}
+
+    div.entity-card > h3 i.share {
+        position: absolute;
+        margin-top: 5px;
+        font-size: 25px;
+        right: 15px;
+        color: #808080;
+    }
+
+div.entity-card > span.subtitle {
+    display: block;
+    padding-bottom: 15px;
+    color: #70757A;
+    word-wrap: break-word;
+    font-size: 14px;
+    line-height: 1.58;
+    border-bottom: 1px solid #DFE1E5;
+}
+
+div.entity-card > span.blurb {
+    display: block;
+    margin: 13px 0 13px 0;
+    font-size: 14px;
+    line-height: 22.12px;
+    word-wrap: break-word;
+    color: #4D5156;
+}
+
+div.entity-card > span.attribute span.property {
+    font-weight: bold;
+    color: #202124;
+}
+
+div.entity-card > span.attribute span.property::after {
+    content: ":\00a0";
+}
+
+div.entity-card > ul.attributes {
+    margin: 7px 0 0 0;
+    list-style-type: none;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+    div.entity-card > ul.attributes li {
+        margin-bottom: 7px;
+        word-wrap: break-word;
+    }
+
+    div.entity-card > ul.attributes li span.property {
+        font-weight: bold;
+        color: #202124;
+    }
+
+    div.entity-card > ul.attributes li span.property::after {
+        content: ":\00a0";
+    }
+
+div.entity-card > h4 {
+    height: 24px;
+    padding: 0;
+    margin-top: 24px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: normal;
+    font-family: 'Product Sans Regular', Arial, Helvetica, sans-serif
+
+}
+
+div.entity-card > ul.image-cluster {
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    column-gap: 15px;
+}
+
+    div.entity-card > ul.image-cluster li {
+        flex-grow: 1;
+    }
+
+    div.entity-card > ul.image-cluster li a {
+        display: block;
+    }
+
+    div.entity-card > ul.image-cluster li img {
+        display: block;
+        max-height: 72px;
+        border-radius: 8px;
+    }
+
+    div.entity-card > ul.image-cluster li span {
+        margin-top: 3px;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
