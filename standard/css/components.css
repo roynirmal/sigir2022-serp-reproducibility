@@ -1,0 +1,42 @@
+div.result-organic {
+    
+}
+
+div.result-organic span.url {
+    display: block;
+    font-size: 14px;
+    color: #202124;
+}
+
+    div.result-organic span.url > span.level {
+        color: #5F6368;
+    }
+
+    div.result-organic span.url > span.level::before {
+        content: "\203a";
+        padding: 0 4px 0 1px;
+    }
+
+div.result-organic a {
+    text-decoration: none;
+}
+
+div.result-organic h3 {
+    margin: 0;
+    padding: 5px 0 0 0;
+    line-height: 26px;
+    height: 26px;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+div.result-organic a:hover h3 {
+    text-decoration: underline;
+}
+
+div.result-organic span.snippet {
+    line-height: 22px;
+    font-size: 14px;
+    color: #5F6368;
+    word-wrap: break-word;
+}

@@ -147,19 +147,23 @@ main > div {
         display: flex;
         justify-content: space-between;
         column-gap: 45px;
-        background-color: yellow;
     }
 
     main > div > div > div.left-container {
         order: 1;
         flex-grow: 1;
-        background-color: red;
     }
 
     main > div > div > div.right-container {
         order: 2;
         width: 370px;
+        flex-shrink: 0;
         background-color: orange;
+    }
+
+    /* For each item on the left rail, add a gap at the bottom */
+    main > div > div > div.left-container > div {
+        margin-bottom: 10px;
     }
 
 /* Stage 2 (Enabling variable left/right margins on the page) */
