@@ -137,9 +137,29 @@ main > div {
     main > div div.stats {
         height: 43px;
         line-height: 43px;
+        margin-bottom: 5px;
         color: #70757A;
         font-size: 14px;
         font-family: 'Product Sans Regular', Arial, Helvetica, sans-serif;
+    }
+
+    main > div div.flex-container {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 45px;
+        background-color: yellow;
+    }
+
+    main > div > div > div.left-container {
+        order: 1;
+        flex-grow: 1;
+        background-color: red;
+    }
+
+    main > div > div > div.right-container {
+        order: 2;
+        width: 370px;
+        background-color: orange;
     }
 
 /* Stage 2 (Enabling variable left/right margins on the page) */
