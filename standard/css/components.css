@@ -188,3 +188,134 @@ div.entity-card > ul.image-cluster {
         line-height: 18px;
     }
 
+/* Answer card */
+
+div.answer-card {
+    min-height: 190px;
+    padding-bottom: 25px;
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+    column-gap: 20px;
+    border-bottom: 1px solid #DADCE0;
+}
+
+div.answer-card > div.left-container {
+    order: 1;
+    flex-grow: 1;
+}
+
+div.answer-card > div.right-container {
+    order: 2;
+    width: 200px;
+    flex-shrink: 0;
+    text-align: right;
+}
+
+div.answer-card ul.categories {
+    margin: 0 0 20px 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 22.12px;
+    list-style-type: none;
+}
+
+div.answer-card ul.categories li {
+    display: inline;
+    color: #202124;
+}
+
+div.answer-card ul.categories li::after {
+    content: "\00a0/";
+    color: #202124;
+}
+
+div.answer-card ul.categories li:last-of-type:after {
+    content: "";
+}
+
+div.answer-card > ul.categories li:first-of-type {
+    color: #70757A;
+}
+
+div.answer-card > div.left-container > span.answer {
+    font-size: 32px;
+    line-height: 32px;
+    color: #202124;
+}
+
+div.answer-card > div.left-container > span.answer-supplementary {
+    display: block;
+    margin-top: 13px;
+    font-size: 14px;
+    line-height: 22.10px;
+    white-space: nowrap;
+    color: #70757A;
+}
+
+div.answer-card > div.right-container > img {
+    max-height: 160px;
+    border-radius: 8px;
+}
+
+div.answer-card > span.feedback {
+    position: absolute;
+    right: 0;
+    bottom: -8px;
+    font-size: 12px;
+    color: #70757A;
+    padding-left: 16px;
+    background-color: #FFF;
+}
+
+div.answer-card > span.feedback a, div.answer-card > span.feedback a:visited, div.answer-card > span.feedback a:hover {
+    color: #70757A;
+    text-decoration: none;
+}
+
+div.answer-card > div.left-container > span.also-header {
+    display: block;
+    margin: 60px 0 15px 0;
+    font-family: 'Product Sans Regular', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 26px;
+    color: #202124;
+}
+
+div.answer-card > div.left-container > span.also-header.no-image {
+    margin-top: 20px;
+}
+
+div.answer-card > div.left-container > ul.also {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    column-gap: 14px;
+    list-style-type: none;
+}
+
+    div.answer-card > div.left-container > ul.also li {
+        display: block;
+        flex: 1;
+        min-width: 0px;
+    }
+
+    div.answer-card > div.left-container > ul.also li a {
+        display: block;
+    }
+
+    div.answer-card > div.left-container > ul.also li img {
+        display: block;
+        border-radius: 8px;
+    }
+
+    div.answer-card > div.left-container > ul.also li span {
+        display: block;
+        margin-top: 3px;
+        font-size: 14px;
+        line-height: 18px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
