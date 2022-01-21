@@ -234,7 +234,7 @@ div.answer-card ul.categories li:last-of-type:after {
     content: "";
 }
 
-div.answer-card > ul.categories li:first-of-type {
+div.answer-card ul.categories li:first-of-type {
     color: #70757A;
 }
 
