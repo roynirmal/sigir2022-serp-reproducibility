@@ -187,7 +187,21 @@ main > div {
     main > div, header > div {
         width: 1086px;
         margin: 0 auto 0 180px;
-        background-color: orange;
+    }
+
+    header > div > img {
+        position: absolute;
+        left: -140px;
+        width: 100px;
+        height: auto;
+        margin-top: 35px;
+        float: left;
+        filter: drop-shadow(0 0 15px rgba(151, 151, 151, 0.75));
+    }
+
+    header > div > form {
+        position: relative;
+        right: 50px;
     }
 
     header > div > form input {
