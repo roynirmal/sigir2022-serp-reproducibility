@@ -191,28 +191,14 @@ div.entity-card > ul.image-cluster {
 /* Answer card */
 
 div.answer-card {
-    min-height: 190px;
+    min-height: 170px;
     padding-bottom: 25px;
-    display: flex;
+    margin-bottom: 50px !important;
     position: relative;
-    justify-content: space-evenly;
-    column-gap: 20px;
     border-bottom: 1px solid #DADCE0;
 }
 
-div.answer-card > div.left-container {
-    order: 1;
-    flex-grow: 1;
-}
-
-div.answer-card > div.right-container {
-    order: 2;
-    width: 200px;
-    flex-shrink: 0;
-    text-align: right;
-}
-
-div.answer-card ul.categories {
+div.answer-card > div.flex-container > div.left-container > ul.categories {
     margin: 0 0 20px 0;
     padding: 0;
     font-size: 14px;
@@ -220,31 +206,31 @@ div.answer-card ul.categories {
     list-style-type: none;
 }
 
-div.answer-card ul.categories li {
+div.answer-card > div.flex-container > div.left-container > ul.categories li {
     display: inline;
     color: #202124;
 }
 
-div.answer-card ul.categories li::after {
+div.answer-card > div.flex-container > div.left-container > ul.categories li::after {
     content: "\00a0/";
     color: #202124;
 }
 
-div.answer-card ul.categories li:last-of-type:after {
+div.answer-card > div.flex-container > div.left-container > ul.categories li:last-of-type:after {
     content: "";
 }
 
-div.answer-card ul.categories li:first-of-type {
+div.answer-card > div.flex-container > div.left-container > ul.categories li:first-of-type {
     color: #70757A;
 }
 
-div.answer-card > div.left-container > span.answer {
+div.answer-card > div.flex-container > div.left-container > span.answer {
     font-size: 32px;
     line-height: 32px;
     color: #202124;
 }
 
-div.answer-card > div.left-container > span.answer-supplementary {
+div.answer-card > div.flex-container > div.left-container > span.answer-supplementary {
     display: block;
     margin-top: 13px;
     font-size: 14px;
@@ -253,7 +239,7 @@ div.answer-card > div.left-container > span.answer-supplementary {
     color: #70757A;
 }
 
-div.answer-card > div.right-container > img {
+div.answer-card > div.flex-container > div.right-container > img {
     max-height: 160px;
     border-radius: 8px;
 }
@@ -268,54 +254,57 @@ div.answer-card > span.feedback {
     background-color: #FFF;
 }
 
-div.answer-card > span.feedback a, div.answer-card > span.feedback a:visited, div.answer-card > span.feedback a:hover {
-    color: #70757A;
-    text-decoration: none;
-}
+    div.answer-card > span.feedback a, div.answer-card > span.feedback a:visited, div.answer-card > span.feedback a:hover {
+        color: #70757A;
+        text-decoration: none;
+    }
 
-div.answer-card > div.left-container > span.also-header {
+div.answer-card > span.also-header {
     display: block;
-    margin: 60px 0 15px 0;
+    margin: 20px 0 10px 0;
     font-family: 'Product Sans Regular', Arial, Helvetica, sans-serif;
     font-size: 20px;
     line-height: 26px;
     color: #202124;
 }
 
-div.answer-card > div.left-container > span.also-header.no-image {
-    margin-top: 20px;
-}
-
-div.answer-card > div.left-container > ul.also {
+div.answer-card > ul.also {
     margin: 0;
     padding: 0;
     max-width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: start;
     column-gap: 14px;
     list-style-type: none;
 }
 
-    div.answer-card > div.left-container > ul.also li {
+    div.answer-card > ul.also li {
         display: block;
         flex: 1;
-        min-width: 0px;
+        max-width: 50px;
+        height: 108px;
     }
 
-    div.answer-card > div.left-container > ul.also li a {
+    div.answer-card > ul.also li a {
         display: block;
     }
 
-    div.answer-card > div.left-container > ul.also li img {
+        div.answer-card > ul.also li a:hover {
+            text-decoration: none;
+        }
+
+    div.answer-card > ul.also li img {
         display: block;
         border-radius: 8px;
     }
 
-    div.answer-card > div.left-container > ul.also li span {
+    div.answer-card > ul.also li span {
         display: block;
+        height: 54px;
         margin-top: 3px;
         font-size: 14px;
         line-height: 18px;
         overflow: hidden;
+        white-space: normal;
         text-overflow: ellipsis;
     }

@@ -84,7 +84,7 @@ header > div {
 
         }
     
-    header > div > ul {
+    header > div > ul.tabs {
         position: absolute;
         bottom: 0;
         margin: 0;
@@ -92,16 +92,16 @@ header > div {
         list-style-type: none;
     }
 
-        header > div > ul > li {
+        header > div > ul.tabs > li {
             display: inline-block;
             margin-right: 5px;
         }
 
-        header > div > ul > li:last-child {
+        header > div > ul.tabs > li:last-child {
             margin-right: 0;
         }
 
-        header > div > ul > li a {
+        header > div > ul.tabs > li a {
             display: inline-block;
             height: 38px;
             line-height: 38px;
@@ -110,32 +110,59 @@ header > div {
             border-bottom: 3px solid transparent;
         }
 
-            header > div > ul > li a i {
+            header > div > ul.tabs > li a i {
                 margin: 0 5px 0 5px;
             }
 
-            header > div > ul > li a span {
+            header > div > ul.tabs > li a span {
                 margin: 0 5px 0 0;
             }
         
-        header > div > ul > li a:visited {
+        header > div > ul.tabs > li a:visited {
             color: #5F6368;
         }
 
-        header > div > ul > li a.selected {
+        header > div > ul.tabs > li a.selected {
             border-bottom: 3px solid #2F73E8;
         }
 
-        header > div > ul > li a:hover {
+        header > div > ul.tabs > li a:hover {
             text-decoration: none;
         }
 
-        header > div span.right {
+        header > div ul.right {
             position: absolute;
             right: 0;
-            top: 25px;
-            font-size: 14px;
+            top: 28px;
+            margin: 0;
+            padding: 0;
+            font-size: 24px;
+            line-height: 24px;
+            list-style-type: none;
             color: #5F6368;
+        }
+
+        header > div ul.right > li {
+            display: inline-block;
+            width: 42px;
+            height: 42px;
+            margin-right: 2px;
+        }
+
+        header > div ul.right > li:last-of-type {
+            margin-right: 0;
+        }
+
+        header > div ul.right > li a {
+            display: block;
+            text-align: center;
+            padding: 8px;
+            color: #5F6368;
+        }
+
+        header > div ul.right > li a:hover {
+            background-color: #EDEEEF;
+            border-radius: 50%;
         }
 
 main > div {
@@ -172,7 +199,7 @@ main > div {
 
     /* For each item on the left rail, add a gap at the bottom */
     main > div > div > div.left-container > div {
-        margin-bottom: 30px;
+        margin-bottom: 35px;
     }
 
 /* Stage 2 (Enabling variable left/right margins on the page) */
@@ -206,5 +233,9 @@ main > div {
 
     header > div > form input {
         width: 573px;
+    }
+
+    main > div div.flex-container {
+        column-gap: 60px;
     }
 }
