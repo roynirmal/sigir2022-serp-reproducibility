@@ -1,0 +1,23 @@
+{
+  "name": "serp_temp",
+  "version": "1.0.0",
+  "description": "A repository with bare-bones HTML, CSS, and some JS for simple SERP designs.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roynirmal/serp_temp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/roynirmal/serp_temp/issues"
+  },
+  "homepage": "https://github.com/roynirmal/serp_temp#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}
