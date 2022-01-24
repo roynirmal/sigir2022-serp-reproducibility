@@ -39,6 +39,14 @@ div.result-organic span.snippet {
     word-wrap: break-word;
 }
 
+    div.result-organic span.snippet span.date {
+        color: #70757A;
+    }
+
+    div.result-organic span.snippet span.date::after {
+        content: "\00a0\2014\00a0";
+    }
+
 div.result-organic > div.subresults {
     margin-left: 16px;
 }
@@ -156,7 +164,7 @@ div.entity-card > h4 {
     font-size: 18px;
     line-height: 24px;
     font-weight: normal;
-    font-family: 'Product Sans Regular', Arial, Helvetica, sans-serif
+    font-family: 'Product Sans Regular', Arial, Helvetica, sans-serif;
 
 }
 
@@ -307,4 +315,111 @@ div.answer-card > ul.also {
         overflow: hidden;
         white-space: normal;
         text-overflow: ellipsis;
+    }
+
+/* Image vertical */
+
+div.image-vertical {
+    position: relative;
+    /* background-color: #E3E3E3; */
+}
+
+    div.image-vertical > span.title {
+        margin-top: 10px;
+        display: inline-block;
+        font-size: 22px;
+        line-height: 28px;
+        height: 28px;
+        font-weight: normal;
+        font-family: 'Product Sans Regular', Arial, Helvetica, sans-serif;
+        color: #202124;
+    }
+
+    div.image-vertical > span.title a, div.image-vertical > span.title a:visited {
+        color: #202124;
+    }
+
+    div.image-vertical > span.title a:hover {
+        color: #1A0DAB;
+        text-decoration: none;
+    }
+
+    div.image-vertical > span.title i {
+        margin-right: 15px;
+    }
+    
+        div.image-vertical > span.title a:hover i {
+            color: #202124;
+        }
+    
+    div.image-vertical > span.left, div.image-vertical > span.right {
+        display: block;
+        position: absolute;
+        left: -20px;
+        top: 98px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+    }
+
+        div.image-vertical > span.left a, div.image-vertical > span.right a {
+            display: block;
+            opacity: 0.9;
+            background: #FFF;
+            cursor: pointer;
+            border-radius: 50%;
+            transition-delay: 0s, 0s;
+            transition-duration: 0.5s, 0.5s;
+            transition-property: opacity, visibility;
+            transition-timing-function: ease, ease;
+            box-shadow: rgba(0, 0, 0, 0.04) 0px 0px 0px 1px, rgba(0, 0, 0, 0.2) 0px 4px 8px 0px;
+        }
+
+        div.image-vertical > span.left a:hover, div.image-vertical > span.right a:hover {
+            opacity: 1.0;
+        }
+
+        div.image-vertical > span.left a img, div.image-vertical > span.right a img {
+            position: relative;
+            top: 6px;
+            width: 24px;
+            height: 24px;
+        }
+
+        div.image-vertical > span.left a img {
+            transform: scaleX(-1);
+        }
+
+    div.image-vertical > span.right {
+        left: auto;
+        right: -20px;
+    }
+
+    div.image-vertical ul {
+        margin: 15px 0 0 0;
+        display: block;
+        padding: 0;
+        height: 130px;
+        overflow: hidden;
+        border-radius: 8px;
+        white-space: nowrap;
+        list-style-type: none;
+    }
+
+    div.image-vertical ul li {
+        display: inline-block;
+        width: auto;
+        scroll-snap-align: start;
+    }
+
+    div.image-vertical ul li img {
+        height: 130px;
+        max-width: 174px;
+        object-fit: cover;
+    }
+
+    div.image-vertical ul li.more {
+        width: 150px;
+        background-color: red;
     }
