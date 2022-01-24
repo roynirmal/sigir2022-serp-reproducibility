@@ -189,6 +189,7 @@ main > div {
     main > div > div > div.left-container {
         order: 1;
         flex-grow: 1;
+        width: 0;
     }
 
     main > div > div > div.right-container {
