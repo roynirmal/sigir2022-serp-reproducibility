@@ -321,7 +321,9 @@ div.answer-card > ul.also {
 
 div.image-vertical {
     position: relative;
-    /* background-color: #E3E3E3; */
+    padding-bottom: 38px;
+    margin-bottom: 68px !important;
+    border-bottom: 1px solid #DADCE0;
 }
 
     div.image-vertical > span.title {
@@ -350,6 +352,25 @@ div.image-vertical {
     
         div.image-vertical > span.title a:hover i {
             color: #202124;
+        }
+    
+    div.image-vertical > span.feedback {
+        display: block;
+        position: absolute;
+        right: 15px;
+        margin-top: 8px;
+        font-size: 12px;
+        color: #70757A;
+        font-style: italic;
+    }
+
+        div.image-vertical > span.feedback a {
+            color: #70757A;
+        }
+
+        div.image-vertical > span.feedback a:hover {
+            color: #70757A;
+            text-decoration: none;
         }
     
     div.image-vertical > span.left, div.image-vertical > span.right {
@@ -387,6 +408,10 @@ div.image-vertical {
             height: 24px;
         }
 
+        div.image-vertical > span.left {
+            display: none;
+        }
+
         div.image-vertical > span.left a img {
             transform: scaleX(-1);
         }
@@ -410,7 +435,6 @@ div.image-vertical {
     div.image-vertical ul li {
         display: inline-block;
         width: auto;
-        scroll-snap-align: start;
     }
 
     div.image-vertical ul li img {
@@ -420,6 +444,38 @@ div.image-vertical {
     }
 
     div.image-vertical ul li.more {
+        position: relative;
         width: 150px;
-        background-color: red;
+        height: 100%;
+        text-align: center;
+    }
+
+    div.image-vertical ul li.more img {
+        display: inline-block;
+        width: 24px;
+        height: auto;
+        padding: 15px;
+        position: relative;
+        bottom: 17px;
+        border-radius: 50%;
+        border: 1px solid #DFE1E5;
+        background-color: #FFF;
+    }
+
+    div.image-vertical ul li.more span {
+        display: block;
+        position: relative;
+        bottom: 25px;
+        font-size: 14px;
+        line-height: 22px;
+        margin-top: 10px;
+        color: #202124;
+    }
+
+    div.image-vertical ul li.more a {
+        color: #202124;
+    }
+
+    div.image-vertical ul li.more a:hover {
+        color: #202124;
     }
