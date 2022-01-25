@@ -479,3 +479,166 @@ div.image-vertical {
     div.image-vertical ul li.more a:hover {
         color: #202124;
     }
+
+/* video vertical */
+
+div.video-vertical {
+    position: relative;
+    padding-bottom: 38px;
+    margin-bottom: 68px !important;
+    border-bottom: 1px solid #DADCE0;
+}
+
+    div.video-vertical > span.title {
+        margin-top: 10px;
+        display: inline-block;
+        font-size: 22px;
+        line-height: 28px;
+        height: 28px;
+        font-weight: normal;
+        font-family: 'Product Sans Regular', Arial, Helvetica, sans-serif;
+        color: #202124;
+    }
+
+    div.video-vertical > span.title a, div.video-vertical > span.title a:visited {
+        color: #202124;
+    }
+
+    div.video-vertical > span.title a:hover {
+        color: #1A0DAB;
+        text-decoration: none;
+    }
+
+    div.video-vertical > span.title i {
+        margin-right: 15px;
+    }
+    
+        div.video-vertical > span.title a:hover i {
+            color: #202124;
+        }
+    
+    div.video-vertical > span.feedback {
+        display: block;
+        position: absolute;
+        right: 15px;
+        margin-top: 8px;
+        font-size: 12px;
+        color: #70757A;
+        font-style: italic;
+    }
+
+        div.video-vertical > span.feedback a {
+            color: #70757A;
+        }
+
+        div.video-vertical > span.feedback a:hover {
+            color: #70757A;
+            text-decoration: none;
+        }
+    
+    div.video-vertical > span.left, div.video-vertical > span.right {
+        display: block;
+        position: absolute;
+        left: -20px;
+        top: 98px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+    }
+
+        div.video-vertical > span.left a, div.video-vertical > span.right a {
+            display: block;
+            opacity: 0.9;
+            background: #FFF;
+            cursor: pointer;
+            border-radius: 50%;
+            transition-delay: 0s, 0s;
+            transition-duration: 0.5s, 0.5s;
+            transition-property: opacity, visibility;
+            transition-timing-function: ease, ease;
+            box-shadow: rgba(0, 0, 0, 0.04) 0px 0px 0px 1px, rgba(0, 0, 0, 0.2) 0px 4px 8px 0px;
+        }
+
+        div.video-vertical > span.left a:hover, div.video-vertical > span.right a:hover {
+            opacity: 1.0;
+        }
+
+        div.video-vertical > span.left a img, div.video-vertical > span.right a img {
+            position: relative;
+            top: 6px;
+            width: 24px;
+            height: 24px;
+        }
+
+        div.video-vertical > span.left {
+            display: none;
+        }
+
+        div.video-vertical > span.left a img {
+            transform: scaleX(-1);
+        }
+
+    div.video-vertical > span.right {
+        left: auto;
+        right: -20px;
+    }
+
+    div.video-vertical ul {
+        margin: 15px 0 0 0;
+        display: block;
+        padding: 0;
+        height: 150px;
+        overflow: hidden;
+        border-radius: 8px;
+        white-space: nowrap;
+        list-style-type: none;
+    }
+
+    div.video-vertical ul li {
+        display: inline-block;
+        width: auto;
+    }
+
+    div.video-vertical ul li img {
+        height: 130px;
+        max-width: 174px;
+        object-fit: cover;
+    }
+
+    div.video-vertical ul li.more {
+        position: relative;
+        width: 150px;
+        height: 100%;
+        text-align: center;
+    }
+
+    div.video-vertical ul li.more img {
+        display: inline-block;
+        width: 24px;
+        height: auto;
+        padding: 15px;
+        position: relative;
+        bottom: 17px;
+        border-radius: 50%;
+        border: 1px solid #DFE1E5;
+        background-color: #FFF;
+    }
+
+    div.video-vertical ul li.more span {
+        display: block;
+        position: relative;
+        bottom: 25px;
+        font-size: 14px;
+        line-height: 22px;
+        margin-top: 10px;
+        color: #202124;
+    }
+
+    div.video-vertical ul li.more a {
+        color: #202124;
+    }
+
+    div.video-vertical ul li.more a:hover {
+        color: #202124;
+    }

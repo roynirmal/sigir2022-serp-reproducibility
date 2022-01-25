@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="/css/googlesans.css" />
         <link rel="stylesheet" href="/css/layout.css" />
         <link rel="stylesheet" href="/css/components.css" />
+
         <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
         <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"> -->
         <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css"> -->
@@ -20,7 +21,7 @@
             <div>
                 <img src="img/logo.svg" alt="Search" />
                 <form>
-                    <input type="text" name="querybox" value="query goes here" disabled />
+                    <input type="text" name="querybox" value="This is the landing page" disabled />
                     <button type="submit" disabled><i class="fas fa-search"></i></button>
                 </form>
                 <ul class="tabs">
@@ -31,8 +32,9 @@
                    <li><a href="#"><i class="fas fa-ellipsis-v"></i><span>More</span></a></li>
                 </ul>
                 <ul class="right">
-                    <li><a href="#"><i class="fas fa-user"></i></a></li>
-                    <button type="button" onclick="location.href='https://tudelft.fra1.qualtrics.com/jfe/form/SV_8vrO8uhievU7IDc'">
+                    <!-- <li><a href="#"><i class="fas fa-user"></i></a></li> -->
+                    <!-- <button type="button" onclick="location.href='https://tudelft.fra1.qualtrics.com/jfe/form/SV_8vrO8uhievU7IDc'"> -->
+                    <button type="button" id="myButton">
                         <i class="fa fa-arrow-right">Next</i>
                     </button>
                 </ul>
@@ -65,7 +67,7 @@
                                 <div class="right-container">
                                     <img src="img/rutte.jpg" alt="Mark Rutte" />
                                 </div>
-                            </div>
+                            </div>  
                             <span class="also-header">People also search for</span>
                             <ul class="also">
                                 <li>
@@ -166,6 +168,30 @@
                                 <li><a href="#"><img src="img/ha_8.png" alt="heart attack symptoms" /></a></li>
                                 <li><a href="#"><img src="img/ha_9.jpeg" alt="heart attack symptoms" /></a></li>
                                 <li><a href="#"><img src="img/ha_10.png" alt="heart attack symptoms" /></a></li>
+                                <li class="more"><a href="#"><img src="img/more-arrow-sub.svg" alt="More" /><span>View all</span></a></li>
+                            </ul>
+                            <span class="feedback"><a href="#">Feedback</a></span>
+                        </div>
+
+                        <div class="js-scrollable video-vertical">
+                            <span class="title"><a href="#"><i class="fas fa-video"></i>Videos for heart attack symptoms</a></span>
+                            <span class="left"><a><img src="img/more-arrow.svg" alt="More" /></a></span>
+                            <span class="right"><a><img src="img/more-arrow.svg" alt="More" /></a></span>
+                            <ul>
+                                <!-- <li><a href="#"><img src="img/ha_1.png" alt="heart attack symptoms" /></a></li> -->
+                                <li>  <iframe  height="150" src="https://www.youtube.com/embed/oaP0Jvuy5U0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+                                <li>  <iframe  height="150" src="https://www.youtube.com/embed/FG-PBM7BmMQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+                                <li>  <iframe  height="150" src="https://www.youtube.com/embed/lWIeVTs94rI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+                                <li>  <iframe  height="150" src="https://www.youtube.com/embed/oaP0Jvuy5U0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+                                <!-- <li><a href="#"><img src="img/ha_2.jpeg" alt="heart attack symptoms" /></a></li>
+                                <li><a href="#"><img src="img/ha_3.jpeg" alt="heart attack symptoms" /></a></li>
+                                <li><a href="#"><img src="img/ha_4.jpeg" alt="heart attack symptoms" /></a></li>
+                                <li><a href="#"><img src="img/ha_5.jpeg" alt="heart attack symptoms" /></a></li>
+                                <li><a href="#"><img src="img/ha_6.jpeg" alt="heart attack symptoms" /></a></li>
+                                <li><a href="#"><img src="img/ha_7.jpeg" alt="heart attack symptoms" /></a></li>
+                                <li><a href="#"><img src="img/ha_8.png" alt="heart attack symptoms" /></a></li>
+                                <li><a href="#"><img src="img/ha_9.jpeg" alt="heart attack symptoms" /></a></li>
+                                <li><a href="#"><img src="img/ha_10.png" alt="heart attack symptoms" /></a></li> -->
                                 <li class="more"><a href="#"><img src="img/more-arrow-sub.svg" alt="More" /><span>View all</span></a></li>
                             </ul>
                             <span class="feedback"><a href="#">Feedback</a></span>
@@ -305,6 +331,32 @@
 
         <!-- Include script for scrolling functionality on necessary components -->
         <script type="text/javascript" src="js/scroll.js"></script>
+        <script type="text/javascript">
+            window.onload  = function() {
+                var pages = new Array('template1.html','template2.html','template3.html', 'template4.html');
+                localStorage.setItem('pages', JSON.stringify(pages))
+            }
+        </script>
+        <script type="text/javascript">
+            document.getElementById("myButton").onclick = function ()
+            {
+            // var all_pages = [1,2,3]
+            var pages = JSON.parse(localStorage.getItem('pages'))
+            // var pages = JSON.parse(localStorage.getItem('pages'))
+            // var myarray = new Array('template1.html','template2.html','template3.html', 'template4.html');
+            var mynum_index = Math.floor(Math.random() * pages.length);
+            // localStorage.setItem('check', mynum_index)
+            // console.log(mynum_index)
+            // var p = pages[mynum_index]
+            window.location.href = pages[mynum_index]
+
+            pages.splice(mynum_index , 1)
+            localStorage.setItem('pages', JSON.stringify(pages))
+            console.log(location)
+
+        
+            }
+        </script>
     </body>
 
 </html>
