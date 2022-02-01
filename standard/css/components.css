@@ -206,7 +206,17 @@ div.answer-card {
     border-bottom: 1px solid #DADCE0;
 }
 
-div.answer-card > div.flex-container > div.left-container > ul.categories {
+div.answer-card > div.flex-container > div.left-container > a {
+    display: block;
+    /* border-radius: 50%; */
+    opacity: 0.9;
+    /* background: #FFF; */
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+div.answer-card > div.flex-container > div.left-container > a>  ul.categories {
     margin: 0 0 20px 0;
     padding: 0;
     font-size: 14px;
@@ -214,25 +224,25 @@ div.answer-card > div.flex-container > div.left-container > ul.categories {
     list-style-type: none;
 }
 
-div.answer-card > div.flex-container > div.left-container > ul.categories li {
+div.answer-card > div.flex-container > div.left-container > a> ul.categories li {
     display: inline;
     color: #202124;
 }
 
-div.answer-card > div.flex-container > div.left-container > ul.categories li::after {
+div.answer-card > div.flex-container > div.left-container > a> ul.categories li::after {
     content: "\00a0/";
     color: #202124;
 }
 
-div.answer-card > div.flex-container > div.left-container > ul.categories li:last-of-type:after {
+div.answer-card > div.flex-container > div.left-container > a> ul.categories li:last-of-type:after {
     content: "";
 }
 
-div.answer-card > div.flex-container > div.left-container > ul.categories li:first-of-type {
+div.answer-card > div.flex-container > div.left-container > a> ul.categories li:first-of-type {
     color: #70757A;
 }
 
-div.answer-card > div.flex-container > div.left-container > span.answer {
+div.answer-card > div.flex-container > div.left-container > a> span.answer {
     font-size: 32px;
     line-height: 32px;
     color: #202124;
@@ -243,7 +253,8 @@ div.answer-card > div.flex-container > div.left-container > span.answer-suppleme
     margin-top: 13px;
     font-size: 14px;
     line-height: 22.10px;
-    white-space: nowrap;
+    word-wrap: break-word;
+    width: 400px;
     color: #70757A;
 }
 
@@ -442,7 +453,7 @@ div.image-vertical {
         max-width: 174px;
         object-fit: cover;
     }
-
+    
     div.image-vertical ul li.more {
         position: relative;
         width: 150px;
@@ -479,8 +490,6 @@ div.image-vertical {
     div.image-vertical ul li.more a:hover {
         color: #202124;
     }
-
-/* video vertical */
 
 div.video-vertical {
     position: relative;
@@ -540,7 +549,7 @@ div.video-vertical {
         display: block;
         position: absolute;
         left: -20px;
-        top: 98px;
+        top: 180px;
         width: 40px;
         height: 40px;
         line-height: 40px;
@@ -585,24 +594,43 @@ div.video-vertical {
     }
 
     div.video-vertical ul {
-        margin: 15px 0 0 0;
-        display: block;
+        margin: 0;
         padding: 0;
-        height: 150px;
-        overflow: hidden;
-        border-radius: 8px;
-        white-space: nowrap;
+        display: grid;
+        gap: 0px 15px;
+        grid-template-rows: auto auto;
+        grid-auto-flow: column;
+        overflow-x: scroll;
         list-style-type: none;
+        /* background: orange; */
+        overflow: hidden; 
+        margin: 15px 0 0 0;
     }
 
     div.video-vertical ul li {
         display: inline-block;
-        width: auto;
+        margin-right: 15px;
+        max-width: 350px;
+        border-radius: 16px;
+        background:  white;
+    }
+    div.video-vertical ul li.card {
+        /* height: 190px; */
+        object-fit: cover;
+        padding: 24px;
+
+    }
+    div.video-vertical ul li.card a  {
+        cursor: pointer;
+        
+    }
+    div.video-vertical ul li.card a h3 {
+        color: rgb(67, 103, 220);
+        
     }
 
-    div.video-vertical ul li img {
-        height: 130px;
-        max-width: 174px;
+    div.video-vertical ul li iframe {
+        height: 150px;
         object-fit: cover;
     }
 
