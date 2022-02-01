@@ -21,9 +21,9 @@
                     <button type="submit" disabled><i class="fas fa-search"></i></button>
                 </form>
                 <ul class="tabs">
-                        <li><a href="./template.html"><i class="fas fa-search"></i><span>All</span></a></li>
-                        <li><a href="" target="blank" class="selected"><i class="fas fa-image"></i><span>Images</span></a></li>
-                        <li><a href="./video_tab.html"><i class="fas fa-video"></i><span>Videos</span></a></li>
+                        <li><a href="./template.html" data-tabName="all"><i class="fas fa-search"></i><span>All</span></a></li>
+                        <li><a href="#" class="selected" data-tabName="images"><i class="fas fa-image"></i><span>Images</span></a></li>
+                        <li><a href="./video_tab.html" data-tabName="videos"><i class="fas fa-video"></i><span>Videos</span></a></li>
                 </ul>
                 <ul class="right">
                     <!-- <li><a href=""><i class="fas fa-user"></i></a></li> -->
@@ -48,22 +48,22 @@
                         <!-- <span class="left"><a><img src="../img/more-arrow.svg" alt="More" /></a></span>
                         <span class="right"><a><img src="../img/more-arrow.svg" alt="More" /></a></span> -->
                         <ul>
-                            <li><a href="https://www.verywellhealth.com/pituitary-gland-anatomy-4802494" target="blank"><img src="img/pituitary1.jpeg" alt="heart attack symptoms" /><p> Pituitary Gland: Anatomy, Function, and Treatment </p></a></li>
-                            <li><a href="https://hjzeimer.com.au/what-is-endocrinology/pituitary-gland/" target="blank"><img src="img/pituitary2.jpeg" alt="heart attack symptoms" /><p>Pituitary Gland - Dr Howard Zeimer </p></a></li>
-                            <li><a href="https://www.hormone.org/your-health-and-hormones/glands-and-hormones-a-to-z/glands/pituitary-gland" target="blank"><img src="img/pituitary3.jpeg" alt="heart attack symptoms" /><p> Pituitary Gland | Hormone Health Network</p></a></li>
-                            <li><a href="https://www.researchgate.net/publication/297679857_Nonfunctioning_pituitary_macroadenoma_A_case_report_from_the_patient_perspective" target="blank"><img src="img/pituitary4.jpeg" alt="heart attack symptoms" /><p>(PDF) Nonfunctioning pituitary macroadenoma: A case report ...</p></a></li>
-                            <li><a href="https://familydoctor.org/condition/pituitary-tumors/" target="blank"><img src="img/pituitary5.jpeg" alt="heart attack symptoms" /><p> Pituitary Tumors - familydoctor.org</p></a></li>
-                            <li><a href="https://socratic.org/questions/what-is-the-function-of-the-pituitary-gland" target="blank"><img src="img/pituitary6.jpeg" alt="heart attack symptoms" /><p>What is the function of the pituitary gland? + Example</p></a></li>
-                            <li><a href="https://www.scienceabc.com/humans/endocrine-glands-and-exocrine-glands-defintion-functions-and-differences.html" target="blank"><img src="img/pituitary7.jpg"alt="heart attack symptoms" /><p> Endocrine vs Exocrine Gland: Defintion, Functions and Differences</p></a></li>
-                            <li><a href="https://gwens-nest.com/adrenal-fatigue-the-truth-you-havent-heard/" target="blank"><img src="img/pituitary8.jpeg" alt="heart attack symptoms" /><p>Adrenal Fatigue: the truth you haven't heard | Gwen's Nest</p></a></li>
-                            <li><a href="https://www.wisegeek.com/what-is-the-anterior-pituitary.htm" target="blank"><img src="img/pituitary9.jpeg" alt="heart attack symptoms" /><p> What is the Anterior Pituitary? (with pictures)</p></a></li>
-                            <li><a href="https://www.positivehealthwellness.com/diet-nutrition/12-ways-you-can-keep-your-pituitary-gland-healthy/" target="blank"><img src="img/pituitary10.jpeg" alt="heart attack symptoms" /><p>12 Ways You Can Keep Your Pituitary Gland Healthy</p></a></li>        
-                            <li><a href="https://www.neuroscientificallychallenged.com/glossary/pituitary-gland/" target="blank"><img src="img/pituitary11.jpeg" alt="heart attack symptoms" /><p> Pituitary gland - definition — Neuroscientifically Challenged</p></a></li>
-                            <li><a href="https://www.kenhub.com/en/library/anatomy/pituitary-gland" target="blank"><img src="img/pituitary12.jpeg" alt="heart attack symptoms" /><p> Pituitary gland: Anatomy and function of the hypophysis | Kenhub </p></a></li>
-                            <li><a href="https://www.pituitarysociety.org/patient-education/pituitary-gland-function" target="blank"><img src="img/pituitary13.jpeg" alt="heart attack symptoms" /><p> What is the Pituitary Gland? | How the Pituitary Gland Works & Functions </p></a></li>
-                            <li><a href="https://www.reference.com/science/pituitary-gland-b7a4bab9be04ccae" target="blank"><img src="img/pituitary14.jpeg" alt="heart attack symptoms" /><p> What Are Some Facts About the Pituitary Gland? | Reference.com </p></a></li>
-                            <li><a href="https://scopeheal.com/pituitary-2/" target="blank"><img src="img/pituitary15.jpeg" alt="heart attack symptoms" /><p> Pituitary: What is it? Structure, Lobes, Function and Associated ... </p></a></li>
-                            <li><a href="https://www.epainassist.com/endocrine/what-happens-if-pituitary-gland-is-removed" target="blank"><img src="img/pituitary16.jpeg" alt="heart attack symptoms" /><p>  What Happens if Pituitary Gland is Removed?</p></a></li>        
+                            <li><a href="https://www.verywellhealth.com/pituitary-gland-anatomy-4802494" target="blank"><img src="img/pituitary1.jpeg" alt="heart attack symptoms" data-imageRank="1" /><p data-imageRank="1"> Pituitary Gland: Anatomy, Function, and Treatment </p></a></li>
+                            <li><a href="https://hjzeimer.com.au/what-is-endocrinology/pituitary-gland/" target="blank"><img src="img/pituitary2.jpeg" alt="heart attack symptoms" data-imageRank="2" /><p data-imageRank="2">Pituitary Gland - Dr Howard Zeimer </p></a></li>
+                            <li><a href="https://www.hormone.org/your-health-and-hormones/glands-and-hormones-a-to-z/glands/pituitary-gland" target="blank"><img src="img/pituitary3.jpeg" alt="heart attack symptoms" data-imageRank="3" /><p data-imageRank="3"> Pituitary Gland | Hormone Health Network</p></a></li>
+                            <li><a href="https://www.researchgate.net/publication/297679857_Nonfunctioning_pituitary_macroadenoma_A_case_report_from_the_patient_perspective" target="blank"><img src="img/pituitary4.jpeg" alt="heart attack symptoms" data-imageRank="4" /><p data-imageRank="4">(PDF) Nonfunctioning pituitary macroadenoma: A case report ...</p></a></li>
+                            <li><a href="https://familydoctor.org/condition/pituitary-tumors/" target="blank"><img src="img/pituitary5.jpeg" alt="heart attack symptoms" data-imageRank="5" /><p data-imageRank="5"> Pituitary Tumors - familydoctor.org</p></a></li>
+                            <li><a href="https://socratic.org/questions/what-is-the-function-of-the-pituitary-gland" target="blank"><img src="img/pituitary6.jpeg" alt="heart attack symptoms" data-imageRank="6" /><p data-imageRank="6">What is the function of the pituitary gland? + Example</p></a></li>
+                            <li><a href="https://www.scienceabc.com/humans/endocrine-glands-and-exocrine-glands-defintion-functions-and-differences.html" target="blank"><img src="img/pituitary7.jpg"alt="heart attack symptoms" data-imageRank="7" /><p data-imageRank="7"> Endocrine vs Exocrine Gland: Defintion, Functions and Differences</p></a></li>
+                            <li><a href="https://gwens-nest.com/adrenal-fatigue-the-truth-you-havent-heard/" target="blank"><img src="img/pituitary8.jpeg" alt="heart attack symptoms" data-imageRank="8" /><p data-imageRank="8">Adrenal Fatigue: the truth you haven't heard | Gwen's Nest</p></a></li>
+                            <li><a href="https://www.wisegeek.com/what-is-the-anterior-pituitary.htm" target="blank"><img src="img/pituitary9.jpeg" alt="heart attack symptoms" data-imageRank="9" /><p data-imageRank="9"> What is the Anterior Pituitary? (with pictures)</p></a></li>
+                            <li><a href="https://www.positivehealthwellness.com/diet-nutrition/12-ways-you-can-keep-your-pituitary-gland-healthy/" target="blank"><img src="img/pituitary10.jpeg" alt="heart attack symptoms" data-imageRank="10" /><p data-imageRank="10">12 Ways You Can Keep Your Pituitary Gland Healthy</p></a></li>        
+                            <li><a href="https://www.neuroscientificallychallenged.com/glossary/pituitary-gland/" target="blank"><img src="img/pituitary11.jpeg" alt="heart attack symptoms" data-imageRank="11" /><p data-imageRank="11"> Pituitary gland - definition — Neuroscientifically Challenged</p></a></li>
+                            <li><a href="https://www.kenhub.com/en/library/anatomy/pituitary-gland" target="blank"><img src="img/pituitary12.jpeg" alt="heart attack symptoms" data-imageRank="12" /><p data-imageRank="12"> Pituitary gland: Anatomy and function of the hypophysis | Kenhub </p></a></li>
+                            <li><a href="https://www.pituitarysociety.org/patient-education/pituitary-gland-function" target="blank"><img src="img/pituitary13.jpeg" alt="heart attack symptoms" data-imageRank="13" /><p data-imageRank="13"> What is the Pituitary Gland? | How the Pituitary Gland Works & Functions </p></a></li>
+                            <li><a href="https://www.reference.com/science/pituitary-gland-b7a4bab9be04ccae" target="blank"><img src="img/pituitary14.jpeg" alt="heart attack symptoms" data-imageRank="14" /><p data-imageRank="14"> What Are Some Facts About the Pituitary Gland? | Reference.com </p></a></li>
+                            <li><a href="https://scopeheal.com/pituitary-2/" target="blank"><img src="img/pituitary15.jpeg" alt="heart attack symptoms" data-imageRank="15" /><p data-imageRank="15"> Pituitary: What is it? Structure, Lobes, Function and Associated ... </p></a></li>
+                            <li><a href="https://www.epainassist.com/endocrine/what-happens-if-pituitary-gland-is-removed" target="blank"><img src="img/pituitary16.jpeg" alt="heart attack symptoms" data-imageRank="16" /><p data-imageRank="16">  What Happens if Pituitary Gland is Removed?</p></a></li>        
 
                             <!-- <li class="more"><a href="" target="blank"><img src="../img/more-arrow-sub.svg" alt="More" /><span>View all</span></a></li> -->
                         </ul>
@@ -74,6 +74,19 @@
                 </div>
             </div>
         </main>
+                <!-- Log UI -->
+                <script type="text/javascript" src="../js/logui.bundle.js"></script>
+
+                <!-- The config object, specific for the page you are loading -->
+                <script type="text/javascript" src="../js/logui-gridserp.js"></script>
+        
+                <!-- The "Driving script" - that controls LogUI -->
+                <script type="text/javascript" src="../js/logui-driver.js"></script>
+                <script type="text/javascript">
+                    window.onload = function() {
+                        sessionStorage.setItem('task', 'inf_rem_one')
+                    }
+                </script>
 
         <!-- Include script for scrolling functionality on necessary components -->
         

@@ -76,6 +76,8 @@
             function loader(form) {
                 var pages = new Array('inf_rem_one', 'inf_und_two');
                 localStorage.setItem('pages', JSON.stringify(pages))
+                sessionStorage.setItem('prolific-id', form.prolificID.value)
+                sessionStorage.setItem('serp', 'grid_serp')
                 // var pages = JSON.parse(localStorage.getItem('pages'))
             // // var pages = JSON.parse(localStorage.getItem('pages'))
             // var myarray = new Array('template1.html','template2.html','template3.html', 'template4.html');
@@ -84,7 +86,7 @@
                 console.log("LOG", pages[mynum_index] + '/template.html')
                 // var p = pages[mynum_index]
                 form.action  = pages[mynum_index] + '/template.html'
-
+                sessionStorage.setItem('task', pages[mynum_index])
                 pages.splice(mynum_index , 1)
                 localStorage.setItem('pages', JSON.stringify(pages))
                 // return false;
