@@ -21,9 +21,9 @@
                     <button type="submit" disabled><i class="fas fa-search"></i></button>
                 </form>
                 <ul class="tabs">
-                        <li><a href="./template.html" ><i class="fas fa-search"></i><span>All</span></a></li>
-                        <li><a href="./image_tab.html" ><i class="fas fa-image"></i><span>Images</span></a></li>
-                        <li><a href="#" class="selected"><i class="fas fa-video"></i><span>Videos</span></a></li>
+                        <li><a href="./template.html" data-tabName="all"><i class="fas fa-search"></i><span>All</span></a></li>
+                        <li><a href="./image_tab.html" data-tabName="images"><i class="fas fa-image"></i><span>Images</span></a></li>
+                        <li><a href="#" class="selected" data-tabName="videos"><i class="fas fa-video"></i><span>Videos</span></a></li>
                 </ul>
                 <ul class="right">
                     <!-- <li><a href="#"><i class="fas fa-user"></i></a></li> -->
@@ -83,6 +83,13 @@
         
         <!-- <script type="text/javascript" src="js/web_scroll.js"></script> -->
         <script type="text/javascript" src="js/scroll.js"></script>
+        <script type="text/javascript" src="../js/logui.bundle.js"></script>
+
+        <!-- The config object, specific for the page you are loading -->
+        <script type="text/javascript" src="../js/logui-listserp.js"></script>
+
+        <!-- The "Driving script" - that controls LogUI -->
+        <script type="text/javascript" src="../js/logui-driver.js"></script>
     </body>
 
 </html>

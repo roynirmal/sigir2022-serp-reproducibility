@@ -19,7 +19,7 @@ div.result-organic a {
     text-decoration: none;
 }
 
-div.result-organic h3 {
+div.result-organic a h3 {
     margin: 0;
     padding: 5px 0 0 0;
     line-height: 26px;

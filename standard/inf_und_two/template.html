@@ -25,9 +25,9 @@
                     <button type="submit" disabled><i class="fas fa-search"></i></button>
                  </form>
                  <ul class="tabs">
-                        <li><a href="#" class="selected"><i class="fas fa-search"></i><span>All</span></a></li>
-                        <li><a href="./image_tab.html"><i class="fas fa-image"></i><span>Images</span></a></li>
-                        <li><a href="./video_tab.html"><i class="fas fa-video"></i><span>Videos</span></a></li>
+                        <li><a href="#" class="selected" data-tabName="all"><i class="fas fa-search"></i><span>All</span></a></li>
+                        <li><a href="./image_tab.html" data-tabName="images"><i class="fas fa-image"></i><span>Images</span></a></li>
+                        <li><a href="./video_tab.html" data-tabName="videos"><i class="fas fa-video"></i><span>Videos</span></a></li>
                 </ul>
                 <ul class="right">
                     <!-- <li><a href="#"><i class="fas fa-user"></i></a></li> -->
@@ -78,23 +78,23 @@
                         </div>
                         
                         <!-- Organic result (including subresults) -->
-                        <div class="result-organic">
+                        <div class="result-organic" data-webRank="1">
                                 <a href="https://www.usgs.gov/special-topics/water-science-school/science/hydroelectric-power-how-it-works" target="_blank">
                                     <span class="url">
                                         <span>www.usgs.gov</span>
                                         <span class="level">special-topics</span>
                                         <span class="level">water-science-school ... </span>
                                     </span>
-                                    <h3 class="title">
+                                    <h3 class="title" data-webRank="1">
                                             USGS.gov | Science for a changing world - Hydro<b>electric</b> <b>Power</b> ... 
                                     </h3>
                                 </a>
-                                <span class="snippet">
+                                <span class="snippet" data-webRank="1">
                                         <b>Power</b> lines are connected to the <b>generator</b> that carry <b>electricity</b> to your home and mine. The water continues past the propellor through the tailrace into the river past the <b>dam</b>. By the way, it is not a good idea to be playing in the water right below a <b>dam</b> when water is released!
                                 </span>
                         </div>
 
-                        <div class="result-organic">
+                        <div class="result-organic" data-webRank="2">
                                 <a href="https://schools.bchydro.com/activities/electricity/how-dams-generate-electricity" target="_blank">
                                     <span class="url">
                                         <span>schools.bchydro.com</span>
@@ -103,27 +103,27 @@
                                         
                                         <!-- <span class="level">scotland</span> -->
                                     </span>
-                                    <h3 class="title">
+                                    <h3 class="title" data-webRank="2">
                                             How <b>dams</b> <b>generate</b> <b>electricity</b> | BCHydro <b>Power</b> Smart for Schools
                                     </h3>
                                 </a>
-                                <span class="snippet">
+                                <span class="snippet" data-webRank="2">
                                         Instructions When you begin the &quot;How <b>dams</b> <b>generate</b> <b>electricity</b>&quot; slideshow, hold on the title screen for a few minutes.Go around the room and ask students to share their ideas about what they know about <b>electricity</b>, where it comes from, and how <b>dams</b> work. On ...
                                 </span>
                         </div>
 
-                        <div class="result-organic">
+                        <div class="result-organic" data-webRank="3">
                                 <a href="https://www.reference.com/science/hydroelectric-dams-produce-electricity-552acd4e99859549" target="_blank">
                                     <span class="url">
                                         <span>www.reference.com</span>
                                         <span class="level">science</span>
                                         <span class="level">hydroelectric-dams-produce ...</span>
                                     </span>
-                                    <h3 class="title">
+                                    <h3 class="title" data-webRank="3">
                                             <b>How Do</b> Hydro<b>electric</b> <b>Dams</b> Produce <b>Electricity</b>?
                                     </h3>
                                 </a>
-                                <span class="snippet">
+                                <span class="snippet" data-webRank="">
                                         Hydro<b>electric</b> <b>dams</b> produce <b>electricity</b> by using falling water to spin a turbine that is connected to a <b>generator</b> through a large metal shaft. The <b>power</b> that the <b>generator</b> receives from the turbine is converted into <b>electricity</b> and then transferred to homes and other structures through <b>power</b> lines.
                                 </span>
                         </div>
@@ -136,16 +136,16 @@
                             <span class="left"><a><img src="../img/more-arrow.svg" alt="More" /></a></span>
                             <span class="right"><a><img src="../img/more-arrow.svg" alt="More" /></a></span>
                             <ul>
-                                    <li><a href="https://www.quora.com/How-do-dams-generate-power" target="blank"><img src="img/dam1.jpeg" alt="heart attack symptoms" /></a></li>
-                                    <li><a href="http://tpstanisslousr.blogspot.com/2012/11/how-hydro-dam-creates-electricity.html" target="blank"><img src="img/dam2.png" alt="heart attack symptoms" /></a></li>
-                                    <li><a href="https://keystagewiki.com/index.php/Hydroelectric_Power" target="blank"><img src="img/dam3.png" alt="heart attack symptoms" /></a></li>
-                                    <li><a href="https://www.electronicsandyou.com/blog/how-to-generate-electricity-how-is-electricity-generated.html" target="blank"><img src="img/dam4.jpeg" alt="heart attack symptoms" /></a></li>
-                                    <li><a href="http://tuspa.libguides.com/energy/hydropower" target="blank"><img src="img/dam5.png" alt="heart attack symptoms" /></a></li>
-                                    <li><a href="http://theenergyofwater.weebly.com/untitled.html" target="blank"><img src="img/dam6.jpeg" alt="heart attack symptoms" /></a></li>
-                                    <li><a href="https://www.topperlearning.com/answer/how-does-the-windmill-and-dam-help-to-produce-electricity/kuf0t9aa" target="blank"><img src="img/dam7.jpeg" alt="heart attack symptoms" /></a></li>
-                                    <li><a href="http://www.dummies.com/education/science/environmental-science/hydropower-generate-energy-with-rivers-and-ocean-tides/" target="blank"><img src="img/dam8.jpg" alt="heart attack symptoms" /></a></li>
-                                    <li><a href="https://www.usgs.gov/media/images/flow-water-produces-hydroelectricity" target="blank"><img src="img/dam9.gif" alt="heart attack symptoms" /></a></li>
-                                    <li><a href="https://www.thinglink.com/scene/532356431534358530" target="blank"><img src="img/dam10.jpeg" alt="heart attack symptoms" /></a></li>        
+                                    <li><a href="https://www.quora.com/How-do-dams-generate-power" target="blank"><img src="img/dam1.jpeg" alt="heart attack symptoms" data-imageRank="1" /></a></li>
+                                    <li><a href="http://tpstanisslousr.blogspot.com/2012/11/how-hydro-dam-creates-electricity.html" target="blank"><img src="img/dam2.png" alt="heart attack symptoms" data-imageRank="2" /></a></li>
+                                    <li><a href="https://keystagewiki.com/index.php/Hydroelectric_Power" target="blank"><img src="img/dam3.png" alt="heart attack symptoms" data-imageRank="3" /></a></li>
+                                    <li><a href="https://www.electronicsandyou.com/blog/how-to-generate-electricity-how-is-electricity-generated.html" target="blank"><img src="img/dam4.jpeg" alt="heart attack symptoms" data-imageRank="4" /></a></li>
+                                    <li><a href="http://tuspa.libguides.com/energy/hydropower" target="blank"><img src="img/dam5.png" alt="heart attack symptoms" data-imageRank="5" /></a></li>
+                                    <li><a href="http://theenergyofwater.weebly.com/untitled.html" target="blank"><img src="img/dam6.jpeg" alt="heart attack symptoms" data-imageRank="6" /></a></li>
+                                    <li><a href="https://www.topperlearning.com/answer/how-does-the-windmill-and-dam-help-to-produce-electricity/kuf0t9aa" target="blank"><img src="img/dam7.jpeg" alt="heart attack symptoms" data-imageRank="7" /></a></li>
+                                    <li><a href="http://www.dummies.com/education/science/environmental-science/hydropower-generate-energy-with-rivers-and-ocean-tides/" target="blank"><img src="img/dam8.jpg" alt="heart attack symptoms" data-imageRank="8" /></a></li>
+                                    <li><a href="https://www.usgs.gov/media/images/flow-water-produces-hydroelectricity" target="blank"><img src="img/dam9.gif" alt="heart attack symptoms" data-imageRank="9" /></a></li>
+                                    <li><a href="https://www.thinglink.com/scene/532356431534358530" target="blank"><img src="img/dam10.jpeg" alt="heart attack symptoms" data-imageRank="10" /></a></li>        
         
                                 <!-- <li class="more"><a href="" target="_blank"><img src="img/more-arrow-sub.svg" alt="More" /><span>View all</span></a></li>  -->
                             </ul>
@@ -156,7 +156,7 @@
                                 <span class="left"><a><img src="../img/more-arrow.svg" alt="More" /></a></span>
                                 <span class="right"><a><img src="../img/more-arrow.svg" alt="More" /></a></span>
                                 <ul>
-                                    <!-- <li><a href="" target="_blank"><img src="img/pituitary1.png" alt="heart attack symptoms" /></a></li> -->
+                                    <!-- <li><a href="" target="_blank"><img src="img/pituitary1.png" alt="heart attack symptoms" data-imageRank="" /></a></li> -->
                                     <li> <iframe   src="https://www.youtube.com/embed/kApW6KhKPSM?autoplay=0" frameborder="0" allowfullscreen></iframe></li>
                                     <li class="card"> <a href="https://www.youtube.com/watch?v=kApW6KhKPSM", target="_blank"> <h3> How Dams Produce Electricity </h3> </a>  </li>
                                     <li> <iframe   src="https://www.youtube.com/embed/zHW_eyYpOVw?autoplay=0" frameborder="0" allowfullscreen></iframe></li>
@@ -173,57 +173,57 @@
                             </div>
 
                         <!-- Organic result (excluding subresults) -->
-                        <div class="result-organic">
+                        <div class="result-organic" data-webRank="4">
                                 <a href="https://www.arrow.com/en/research-and-events/articles/how-do-hydroelectric-dams-work" target="_blank">
                                     <span class="url">
                                         <span>www.arrow.com</span>
                                         <span class="level">research-and-events</span>
                                         <span class="level">articles ...</span>
                                     </span>
-                                    <h3 class="title">
+                                    <h3 class="title" data-webRank="4">
                                             <b>How Do Hydroelectric Dams Work</b>? | Arrow.com
                                     </h3>
                                 </a>
-                                <span class="snippet">
+                                <span class="snippet" data-webRank="4">
                                         Hydro<b>electric</b> <b>dams</b> <b>create</b> vast hydrostatic potential <b>energy</b> stores, move large amounts of water through turbines, and spin <b>generator</b>s that produce <b>electricity</b>. The largest hydro<b>electric</b> <b>dam</b> in the world―the Three Gorges <b>Dam</b> in China&#39;s Yangtze River―can <b>generate</b> up to 22,500 MW of <b>electricity</b>.
                                 </span>
                         </div>
 
                         <!-- Organic result (excluding subresults) -->
-                        <div class="result-organic">
+                        <div class="result-organic" data-webRank="5">
                                 <a href="https://www.worldatlas.com/articles/how-do-hydroelectric-dams-work.html"  target="_blank">
                                     <span class="url">
                                         <span>www.worldatlas.com</span>
                                         <span class="level">articles</span>
                                         <span class="level">how-do-hydroelectric-dams-work</span>
                                     </span>
-                                    <h3 class="title">
+                                    <h3 class="title" data-webRank="5">
                                             <b>How Do</b> Hydro<b>electric</b> <b>Dams</b> Work? - WorldAtlas
                                     </h3>
                                 </a>
-                                <span class="snippet">
+                                <span class="snippet" data-webRank="5">
                                         <b>How Do</b> Hydro<b>electric</b> <b>Dams</b> Work? Hydro<b>electric</b> <b>energy</b> is a form of renewable <b>energy</b> produced by harnessing the <b>power</b> of moving water and converting that to usable <b>electricity</b>. A <b>dam</b> is a vital part of this process and works by reserving or holding back this <b>power</b> and controlling its flow.
                                 </span>
                         </div>
 
                         <!-- Organic result (excluding subresults) -->
-                        <div class="result-organic">
+                        <div class="result-organic" data-webRank="6">
                                 <a href="https://www.turbinegenerator.org/hydro/hydroelectric-dam/" target="_blank">
                                     <span class="url">
                                         <span>www.turbinegenerator.org</span>
                                         <span class="level">hydro</span>
                                         <span class="level">hydroelectric-dam</span>
                                     </span>
-                                    <h3 class="title">
+                                    <h3 class="title" data-webRank="6">
                                             <b>Hydroelectric Dam</b> - <b>Hydroelectric</b> <b>Power</b> Plant ...
                                     </h3>
                                 </a>
-                                <span class="snippet">
+                                <span class="snippet" data-webRank="6">
                                         <b>Hydroelectric</b> <b>dams</b> use a reservoir of water to capture and flow water through a hydro turbine <b>generator</b> to <b>create</b> <b>electricity</b>. How a <b>Hydroelectric Dam</b> works: A <b>hydroelectric dam</b>, like the one seen in the picture above, is usually built in a river or a lake.
                                 </span>
                         </div>
 
-                        <div class="result-organic">
+                        <div class="result-organic" data-webRank="7">
                                 <a href="https://www.easytechjunkie.com/how-is-electricity-generated-from-water.htm" target="_blank">
                                     <span class="url">
                                         <span>www.easytechjunkie.com</span>
@@ -232,57 +232,57 @@
                                         
                                         <!-- <span class="level">scotland</span> -->
                                     </span>
-                                    <h3 class="title">
+                                    <h3 class="title" data-webRank="7">
                                             <b>How is Electricity Generated from Water</b>? (with pictures) - Info Bloom
                                     </h3>
                                 </a>
-                                <span class="snippet">
+                                <span class="snippet" data-webRank="7">
                                         Using the <b>energy</b> potential of trapped water in a <b>dam</b> is one way to <b>generate</b> <b>electricity</b> from water. There are some drawbacks to <b>electricity generated from water</b>. <b>Dams</b>, for example, can be quite destructive when they are installed, as water will flood the regions behind <b>dams</b>.
                                 </span>
                         </div>
-                        <div class="result-organic">
+                        <div class="result-organic" data-webRank="8">
                                 <a href="https://www.energy.gov/eere/water/how-hydropower-works" target="_blank">
                                     <span class="url">
                                         <span>www.energy.gov</span>
                                         <span class="level">eere</span>
                                         <span class="level">water...</span>
                                     </span>
-                                    <h3 class="title">
+                                    <h3 class="title" data-webRank="8">
                                             <b>How Hydropower Works</b> | Department of <b>Energy</b>
                                     </h3>
                                 </a>
-                                <span class="snippet">
+                                <span class="snippet" data-webRank="8">
                                         Hydropower, or hydro<b>electric</b> <b>power</b>, is a renewable source of <b>energy</b> that <b>generates</b> <b>power</b> by using a <b>dam</b> or diversion structure to alter the natural flow of a river or other body of water. Hydropower relies on the endless, constantly recharging system of the water cycle to produce <b>electricity</b>, using a fuel—water—that is not reduced or eliminated in the process.
                                 </span>
                         </div>
-                        <div class="result-organic">
+                        <div class="result-organic" data-webRank="9">
                                 <a href="https://www.enbridge.com/energy-matters/energy-school/hydro-generation" target="_blank">
                                     <span class="url">
                                         <span>www.enbridge.com</span>
                                         <span class="level">energy-matters</span>
                                         <span class="level">energy-school...</span>
                                     </span>
-                                    <h3 class="title">
+                                    <h3 class="title" data-webRank="9">
                                             <b>How is hydroelectricity generated</b>? - Enbridge Inc.
                                     </h3>
                                 </a>
-                                <span class="snippet">
+                                <span class="snippet" data-webRank="9">
                                         Hydro<b>electric</b> <b>power</b> is a renewable <b>energy</b> source which harnesses the <b>power</b> of moving water to produce <b>electricity</b>. The hydro<b>electric</b> process starts long before you turn your light on at home or work. Large scale hydro<b>electricity</b> projects typically involve <b>dams</b>. Run-of-river and tidal projects also harness the <b>power</b> of moving water to <b>generate</b> ...
                                 </span>
                             
                         </div>
-                        <div class="result-organic">
+                        <div class="result-organic" data-webRank="10">
                                 <a href="https://www.infobloom.com/how-do-dams-work.htm"  target="_blank">
                                     <span class="url">
                                         <span>www.infobloom.com</span>
                                         <span class="level">how-do-dams-work.htm</span>
                                         <!-- <span class="level">pituitary-tumors ...</span> -->
                                     </span>
-                                    <h3 class="title">
+                                    <h3 class="title" data-webRank="10">
                                             <b>How do Dams Work</b>? (with pictures) - Info Bloom
                                     </h3>
                                 </a>
-                                <span class="snippet">
+                                <span class="snippet" data-webRank="10">
                                         Hydro<b>electric</b> <b>dams</b> use water to turn turbines that <b>generate</b> <b>electricity</b>. <b>Dams</b> are one of humanity&#39;s oldest innovations. People may have borrowed the idea from the beavers, but human ingenuity has taken <b>dam</b>-building to incredible heights. These structures serve many functions: flood control, navigation, water supply, <b>power</b> <b>generation</b> and even ...
                                 </span>
                         </div>
@@ -369,19 +369,26 @@
 
         <!-- Include script for scrolling functionality on necessary components -->
         <script type="text/javascript" src="../js/scroll.js"></script>
+        <script type="text/javascript" src="../js/logui.bundle.js"></script>
+
+        <!-- The config object, specific for the page you are loading -->
+        <script type="text/javascript" src="../js/logui-listserp.js"></script>
+
+        <!-- The "Driving script" - that controls LogUI -->
+        <script type="text/javascript" src="../js/logui-driver.js"></script>
+
         <script type="text/javascript">
             document.getElementById("myButton").onclick = function ()
             {
             var pages = JSON.parse(localStorage.getItem('pages'))
-            localStorage.setItem('path', window.location.pathname)
-            // var myarray = new Array('template1.html','template2.html','template3.html', 'template4.html');
+            
             if (pages.length == 0) {
                 window.location.href = "https://tudelft.fra1.qualtrics.com/jfe/form/SV_8vrO8uhievU7IDc"
             } else {
                 var mynum_index = Math.floor(Math.random() * pages.length); 
                 // console.log("LOG", pages[mynum_index] + '/template.html')
                 window.location.href = '/' + pages[mynum_index] + '/template.html'
-
+                sessionStorage.setItem('task', pages[mynum_index])
                 pages.splice(mynum_index , 1)
                 localStorage.setItem('pages', JSON.stringify(pages))
             }
