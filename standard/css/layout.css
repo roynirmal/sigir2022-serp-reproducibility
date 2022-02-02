@@ -140,6 +140,11 @@ header > div {
             line-height: 24px;
             list-style-type: none;
             color: #5F6368;
+            max-width: 350px;
+        }
+        header > div ul.right >span.info-need {
+            font-size: 15px;
+            word-wrap: break-word;
         }
 
         header > div ul.right > li {
