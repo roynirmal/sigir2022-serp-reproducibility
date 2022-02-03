@@ -16,7 +16,7 @@ let logUIConfigurationObject = {
     },
     trackingConfiguration: {
         'tab-click': {
-            selector: 'header > div > ul.tabs *',  // Maybe we can make this a bit cleaner. Need to make this bubble up for capturing the tab name, metadata!
+            selector: 'header > div > ul.tabs > li a',  // Maybe we can make this a bit cleaner. Need to make this bubble up for capturing the tab name, metadata!
             event: 'click',
             name: 'TAB_LINK_CLICK',
             metadata: [
@@ -64,7 +64,7 @@ let logUIConfigurationObject = {
             },
         },
         'facts-click': {
-            selector: 'div.answer-card > div.flex-container > div.left-container > a *',
+            selector: 'div.answer-card > div.flex-container > div.left-container > a',
             event: 'click',
             name: 'FACTS_LINK_CLICK'
         },
@@ -110,18 +110,6 @@ let logUIConfigurationObject = {
                     name: 'VIDEO_SERP_HOVEROUT',
                 }
             },
-            metadata: [
-                {
-                    nameForLog: 'rank',
-                    sourcer: 'elementAttribute',
-                    lookFor: 'data-videoRank',
-                },
-            ],
-        },
-        'video-click': {
-            selector: 'div.video-vertical ul li',
-            event: 'click',
-            name: 'VIDEO_SERP_CLICK',
             metadata: [
                 {
                     nameForLog: 'rank',
@@ -199,6 +187,18 @@ let logUIConfigurationObject = {
                 },
             ],
         },
+        'web-title-hover': {
+            selector: 'div.result-organic h3',
+            event: 'click',
+            name: 'WEB_TITLE_CLICK',
+            metadata: [
+                {
+                    nameForLog: 'rank',
+                    sourcer: 'elementAttribute',
+                    lookFor: 'data-webRank',
+                },
+            ],
+        },
         'image-tab-hover': {
             selector: 'div.grid-container > div.image-grid > ul > li > a > img',
             event: 'mouseHover',
@@ -230,7 +230,7 @@ let logUIConfigurationObject = {
                 },
             ],
         },
-        'image-tab-click': {
+        'image-tab-link-click': {
             selector: 'div.grid-container > div.image-grid > ul > li > a > p',
             event: 'click',
             name: 'IMAGE_TAB_CLICK',
@@ -257,23 +257,23 @@ let logUIConfigurationObject = {
                 {
                     nameForLog: 'rank',
                     sourcer: 'elementAttribute',
-                    lookFor: 'data-videoRank',
+                    lookFor: 'id',
                 },
             ],
         },
-        'video-tab-click': {
-            selector: 'div.grid-container > div.video-grid > ul > li > iframe *',
-            event: 'click',
-            name: 'VIDEO_TAB_CLICK',
-            metadata: [
-                {
-                    nameForLog: 'rank',
-                    sourcer: 'elementAttribute',
-                    lookFor: 'data-videoRank',
-                },
-            ],
-        },
-        'video-tab-click': {
+        // 'video-tab-click': {
+        //     selector: 'div.grid-container > div.video-grid > ul > li > iframe ',
+        //     event: 'onStateChange',
+        //     name: 'VIDEO_TAB_CLICK',
+        //     metadata: [
+        //         {
+        //             nameForLog: 'rank',
+        //             sourcer: 'elementAttribute',
+        //             lookFor: 'id',
+        //         },
+        //     ],
+        // },
+        'video-tab-link-click': {
             selector: 'div.grid-container > div.video-grid > ul > li > a > h3',
             event: 'click',
             name: 'VIDEO_TAB_CLICK',
@@ -284,6 +284,6 @@ let logUIConfigurationObject = {
                     lookFor: 'data-videoRank',
                 },
             ],
-        },
-    },
+        }
+    }
 }

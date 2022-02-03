@@ -203,6 +203,7 @@ div.grid-container > div.video-grid > ul {
 
 div.grid-container > div.video-grid > ul > li {
     display: inline-block;
+    min-height: 250px;
     margin-right: 15px;
     width: 325px;
     border-radius: 16px;
@@ -220,8 +221,16 @@ div.grid-container > div.video-grid > ul > li >  a > h3 {
     /* height: 380px; */
     
 }
+/* div.grid-container > div.video-grid > ul > li > span  {
+    height: 250px;   
+    background-color: red;
+    display: inline-block;
+    width: 100% */
+    /* object-fit: cover;
+    width: 100%; */
+/* } */
 
-div.grid-container > div.video-grid > ul > li > iframe {
+div.grid-container > div.video-grid > ul > li > span > iframe {
     height: 250px;   
     object-fit: cover;
     width: 100%;

@@ -206,7 +206,10 @@ main > div {
     main > div > div > div.left-container > div {
         margin-bottom: 35px;
     }
-
+    main > div > div > div.right-container  > span > button{
+        font-family: Arial, Helvetica, sans-serif ; 
+        margin-top: 10px;
+    }
 /* Stage 2 (Enabling variable left/right margins on the page) */
 @media only screen and (min-width: 1120px) {
     main > div, header > div {

@@ -92,7 +92,7 @@ div.entity-card > h3 {
     padding: 12px 0 4px 0;
     position: relative;
     margin: 0;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: normal;
     line-height: 36px;
     color: #202124;
@@ -120,7 +120,7 @@ div.entity-card > span.subtitle {
 div.entity-card > span.blurb {
     display: block;
     margin: 13px 0 13px 0;
-    font-size: 14px;
+    font-size: 20px;
     line-height: 22.12px;
     word-wrap: break-word;
     color: #4D5156;
