@@ -187,7 +187,7 @@ let logUIConfigurationObject = {
                 },
             ],
         },
-        'web-title-hover': {
+        'web-title-click': {
             selector: 'div.result-organic h3',
             event: 'click',
             name: 'WEB_TITLE_CLICK',
