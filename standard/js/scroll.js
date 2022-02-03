@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
 function initScrollableComponent(element) {
     for (let component of element.getElementsByTagName('span')) {
-        console.log("LOG IM", component.className)
+        // console.log("LOG IM", component.className)
         switch (component.className) {
             case 'left':
                 component.getElementsByTagName('a')[0].addEventListener('click', scrollLeft);
@@ -29,7 +29,7 @@ function initScrollableComponent(element) {
 }
 function initWebScrollableComponent(element) {
     for (let component of element.getElementsByTagName('span')) {
-        console.log("LOG W", component.className)
+        // console.log("LOG W", component.className)
         switch (component.className) {
             case 'scroll-controller left':
                 component.getElementsByTagName('a')[0].addEventListener('click', webScrollLeft);
@@ -151,7 +151,7 @@ function sideScroll(element, direction, speed, distance, step) {
         if (direction == 'left'){
             element.scrollLeft -= step;
         } else {
-            console.log("SCROLL OG", element.scrollLeft)
+            // console.log("SCROLL OG", element.scrollLeft)
             element.scrollLeft += step;
         }
         scrollAmount += step;
@@ -173,7 +173,7 @@ function webSideScroll(element, direction, speed, distance, step) {
             element.scrollLeft -= step;
             
         } else {
-            console.log("SCROLL", element.scrollLeft)
+            // console.log("SCROLL", element.scrollLeft)
             element.scrollLeft += step;
         }
         scrollAmount += step;

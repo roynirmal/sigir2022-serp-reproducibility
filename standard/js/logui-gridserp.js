@@ -119,18 +119,6 @@ let logUIConfigurationObject = {
             ],
         },
         'video-click': {
-            selector: 'div.video-vertical ul li',
-            event: 'click',
-            name: 'VIDEO_SERP_CLICK',
-            metadata: [
-                {
-                    nameForLog: 'rank',
-                    sourcer: 'elementAttribute',
-                    lookFor: 'data-videoRank',
-                },
-            ],
-        },
-        'video-click': {
             selector: 'div.video-vertical ul li.card a h3',
             event: 'click',
             name: 'VIDEO_SERP_CLICK',
@@ -199,6 +187,30 @@ let logUIConfigurationObject = {
                 },
             ],
         },
+        'web-title-click': {
+            selector: 'div.grid-container > div.web-results > div.results-container > ul > li > a >h3',
+            event: 'click',
+            name: 'WEB_TITLE_CLICK',
+            metadata: [
+                {
+                    nameForLog: 'rank',
+                    sourcer: 'elementAttribute',
+                    lookFor: 'data-webRank',
+                },
+            ],
+        },
+        'web-title-span-click': {
+            selector: 'div.grid-container > div.web-results > div.results-container > ul > li > a > span.url',
+            event: 'click',
+            name: 'WEB_TITLE_CLICK',
+            metadata: [
+                {
+                    nameForLog: 'rank',
+                    sourcer: 'elementAttribute',
+                    lookFor: 'data-webRank',
+                },
+            ],
+        },
         'image-tab-hover': {
             selector: 'div.grid-container > div.image-grid > ul > li > a > img',
             event: 'mouseHover',
@@ -253,18 +265,6 @@ let logUIConfigurationObject = {
                     name: 'VIDEO_TAB_HOVEROUT',
                 }
             },
-            metadata: [
-                {
-                    nameForLog: 'rank',
-                    sourcer: 'elementAttribute',
-                    lookFor: 'data-videoRank',
-                },
-            ],
-        },
-        'video-tab-click': {
-            selector: 'div.grid-container > div.video-grid > ul > li > iframe *',
-            event: 'click',
-            name: 'VIDEO_TAB_CLICK',
             metadata: [
                 {
                     nameForLog: 'rank',
