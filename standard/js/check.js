@@ -1,9 +1,15 @@
 let viewedList = window.sessionStorage.getItem('viewedList');
 
 let taskPageMapping = {
-    'task1': 'page1.html',
-    'task2': 'page2.html',
-    'task3': 'page3.html',
+    'inf_an_one': 'http://lambda1.ewi.tudelft.nl/inf_an_one/template.html',
+    'inf_an_two': 'http://lambda1.ewi.tudelft.nl/inf_an_two/template.html',
+    'inf_an_three': 'http://lambda1.ewi.tudelft.nl/inf_an_three/template.html',
+    'inf_rem_one': 'http://lambda1.ewi.tudelft.nl/inf_rem_one/template.html',
+    'inf_rem_two': 'http://lambda1.ewi.tudelft.nl/inf_rem_two/template.html',
+    'inf_rem_three': 'http://lambda1.ewi.tudelft.nl/inf_rem_three/template.html',
+    'inf_und_one': 'http://lambda1.ewi.tudelft.nl/inf_und_one/template.html',
+    'inf_und_two': 'http://lambda1.ewi.tudelft.nl/inf_und_two/template.html',
+    'inf_und_three': 'http://lambda1.ewi.tudelft.nl/inf_und_three/template.html',
 };
 
 document.addEventListener("DOMContentLoaded", function(){
