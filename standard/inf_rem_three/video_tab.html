@@ -84,6 +84,10 @@
         </main>
 
         <!-- Log UI -->
+        <script type="text/javascript">
+            let currentPage = 'if_rem_three';
+     </script>
+    <script type="text/javascript" src="../js/check.js"></script>
         <script type="text/javascript" src="../js/logui.bundle.js"></script>
 
         <!-- The config object, specific for the page you are loading -->
@@ -92,6 +96,12 @@
         <!-- The "Driving script" - that controls LogUI -->
         <script type="text/javascript" src="../js/logui-driver.js"></script>
         <script type="text/javascript" src="../js/yt.js"></script>
+        <script type="text/javascript">
+            document.getElementById("myButton").onclick = function ()
+            {
+                window.location.href = './question.html'
+        }
+        </script>
         <script type="text/javascript">      
             document.addEventListener("DOMContentLoaded", function(){
                 // var elementID = 'video-1';

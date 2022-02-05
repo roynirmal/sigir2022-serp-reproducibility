@@ -82,11 +82,21 @@
         <!-- Include script for scrolling functionality on necessary components -->
         
         <!-- <script type="text/javascript" src="js/web_scroll.js"></script> -->
+        <script type="text/javascript">
+            let currentPage = 'if_rem_one';
+     </script>
+    <script type="text/javascript" src="../js/check.js"></script>
         <script type="text/javascript" src="../js/yt.js"></script>
         <script type="text/javascript" src="../js/logui.bundle.js"></script>
 
         <!-- The config object, specific for the page you are loading -->
         <script type="text/javascript" src="../js/logui-listserp.js"></script>
+        <script type="text/javascript">
+            document.getElementById("myButton").onclick = function ()
+            {
+                window.location.href = './question.html'
+        }
+        </script>
 
         <!-- The "Driving script" - that controls LogUI -->
         <script type="text/javascript" src="../js/logui-driver.js"></script>
