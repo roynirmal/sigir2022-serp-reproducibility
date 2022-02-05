@@ -141,11 +141,14 @@ header > div {
             list-style-type: none;
             color: #5F6368;
             max-width: 400px;
+            text-align: right;
         }
-        header > div ul.right >span.info-need {
+        header > div ul.right > span.info-need {
             font-size: 15px;
+            line-height: 17px;
             word-wrap: break-word;
         }
+
         header > div ul.right > li {
             display: inline-block;
             width: 42px;
@@ -167,6 +170,24 @@ header > div {
         header > div ul.right > li a:hover {
             background-color: #EDEEEF;
             border-radius: 50%;
+        }
+
+        header > div ul.right > button {
+            padding: 3px 10px 3px 10px;
+            border-radius: 8px;
+            background-color: #202123;
+            color: #FFFFFF;
+            font-family: 'Product Sans Regular', Arial, Helvetica, sans-serif;
+        }
+
+        header > div ul.right > button:hover {
+            background: #EBEBEB;
+            color: #000;
+            cursor: pointer;
+        }
+
+        header > div ul.right > button i {
+            margin-right: 5px;
         }
 
 main > div {
@@ -206,10 +227,7 @@ main > div {
     main > div > div > div.left-container > div {
         margin-bottom: 35px;
     }
-    main > div > div > div.right-container  > span > button{
-        font-family: Arial, Helvetica, sans-serif ; 
-        margin-top: 10px;
-    }
+
 /* Stage 2 (Enabling variable left/right margins on the page) */
 @media only screen and (min-width: 1120px) {
     main > div, header > div {
