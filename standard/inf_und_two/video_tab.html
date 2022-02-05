@@ -84,8 +84,11 @@
             </div>
         </main>
 
-        <!-- Include script for scrolling functionality on necessary components -->
         
+        <script type="text/javascript">
+            let currentPage="inf_und_two"
+        </script>
+        <script type="text/javascript" src="../js/check.js"></script>
         <!-- <script type="text/javascript" src="js/web_scroll.js"></script> -->
         <script type="text/javascript" src="../js/yt.js"></script>
         <script type="text/javascript" src="../js/logui.bundle.js"></script>
@@ -135,6 +138,12 @@
 	        }
 
         </script>
+                <script type="text/javascript">
+                    document.getElementById("myButton").onclick = function ()
+                    {
+                        window.location.href = './question.html'
+                }
+                </script>
     </body>
 
 </html>
