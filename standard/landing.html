@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="css/components.css" />
         <link rel="stylesheet" href="css/grid.css" />
         <link rel="stylesheet" href="css/landing.css" />
-        <title>Standard SERP Template</title>
+        <title>Search Experiment</title>
     </head>
 
     <body style="background: #f5f5f7;">
@@ -43,21 +43,21 @@
                         <div>
                                 <h2 class="check-list">Welcome to the study!</h2>
                                 <ul class="check-list">
-                                <li>We will provide you with 13 scenarios, one after the other, each with its own information need.</li>
+                                <li>You will be asked to walk through 13 search scenarios, one after the other. Each will have its own information need.</li>
+                                <li>We will provide you with results from the web (documents, images, videos, etc.) as seen on a typical results page.</li>
+                                <li>Your task is to go through the results and find the information pertaining to the given information need.</li>
                                 <li>The information need will be present at the top right of the results page.</li>
-                                <li>We will also provide you the results from the web (documents, images, videos etc.) as seen on a typical search engine results page.</li>
-                                <li>Your task is to go through the results and find the information pertaining to the search scenario.</li>
-                                <li>You can open the results and take as long as you need to find the information.</li>
-                                <li>Once you are <b>satisfied</b> that you have all the information related to the search scenario click the Answer button at the top of the results page. </li>
-                                <li>You will be taken to a new page where you will need to write down the answer for that particular scenario. Write your answer (at most 50 words) based on the information you found on the results page.</li>
-                                <li>Answers that are not on topic or does not address the information need will be subject to disqualification.</li>
-                                <li>Once you have written down the answer, click the Next button to go to the next search scenario.</li>
+                                <li>You can open the results (click links) and take as long as you need to find the information.</li>
+                                <li>Once you are <b>satisfied</b> that you have found information to answer the information click the <strong>Answer</strong> button at the top of the results page. </li>
+                                <li>You will be taken to a new page where you type the answer for that particular scenario. Write a short answer (at most 50 words) based on the information you found on the results page.</li>
+                                <li>Answers that are not on topic or do not address the information need will be disqualified.</li>
+                                <li>Once you have written down the answer, click the <strong>Next</strong> button to go to the next search scenario.</li>
                                 <li>After you have gone through all 13 scenarios, we will take you to an exit survey to complete the study.</li>
-                                <li> <b> Only use the results we provide. You do not need to issue queries in a separate search engine.</b></li>
-                                  <li> Type in your Prolific ID and click Submit to start the study!
-                                        <form method="GET" onsubmit="loader(this);">   
-                                            <input type="text" name="prolificID" required />
-                                            <input type="submit" name="Next" style="margin: 1.5rem 0 0 0;" />
+                                <li><b>Only use the results we provide. You do not need to issue queries in a separate search engine.</b></li>
+                                <li>When ready, type in your Prolific ID and click Submit to start the study!
+                                        <form method="GET" onsubmit="loader(this);" style="margin-top: 10px;">   
+                                            <input type="text" name="prolificID" style="width: 250px; line-height: 28px; padding: 0 5px 0 5px;" required />
+                                            <input type="submit" name="Next" style="margin: 1.5rem 0 0 5px; line-height: 28px; padding: 0 5px 0 5px;" />
                                                 <!-- <button type="button">
                                                         <i class="fa fa-arrow-right">Next</i>
                                                 </button> -->
@@ -78,10 +78,10 @@
         // window.location.href = 'template.html';
             // document.getElementById("myButton").onclick   = function() {
             function loader(form) {
-                var pages = new Array('inf_rem_one', 'inf_rem_two', 'inf_rem_three', 'inf_und_one', 'inf_und_two', 'inf_an_one');
+                var pages = new Array('inf_rem_one','inf_rem_two', 'inf_rem_three', 'inf_und_one', 'inf_und_two', 'inf_an_one');
                 localStorage.setItem('pages', JSON.stringify(pages))
                 sessionStorage.setItem('prolific-id', form.prolificID.value)
-                sessionStorage.setItem('serp', 'list_serp')
+                sessionStorage.setItem('serp', 'grid_serp')
                 // var pages = JSON.parse(localStorage.getItem('pages'))
             // // var pages = JSON.parse(localStorage.getItem('pages'))
             // var myarray = new Array('template1.html','template2.html','template3.html', 'template4.html');
