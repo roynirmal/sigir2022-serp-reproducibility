@@ -16,7 +16,7 @@ let logUIConfigurationObject = {
     },
     trackingConfiguration: {
         'tab-click': {
-            selector: 'header > div > ul.tabs *',  // Maybe we can make this a bit cleaner. Need to make this bubble up for capturing the tab name, metadata!
+            selector: 'header > div > ul.tabs > li a',  // Maybe we can make this a bit cleaner. Need to make this bubble up for capturing the tab name, metadata!
             event: 'click',
             name: 'TAB_LINK_CLICK',
             metadata: [
@@ -47,7 +47,7 @@ let logUIConfigurationObject = {
             ],
         },
         'next-click': {
-            selector: 'header > div ul.right button',  // Maybe we can make this a bit cleaner. Need to make this bubble up for capturing the tab name, metadata!
+            selector: 'header > div ul.right > button',  // Maybe we can make this a bit cleaner. Need to make this bubble up for capturing the tab name, metadata!
             event: 'click',
             name: 'NEXT_CLICK'
         },
@@ -64,7 +64,12 @@ let logUIConfigurationObject = {
             },
         },
         'facts-click': {
-            selector: 'div.grid-container > div.facts > div.facts-container > ul > li > a *',
+            selector: 'div.grid-container > div.facts > div.facts-container > ul > li > a ',
+            event: 'click',
+            name: 'FACTS_LINK_CLICK'
+        },
+        'entity-link-click': {
+            selector: 'div.grid-container > div.facts > div.facts-container > ul > li > span.snippet > p >  a ',
             event: 'click',
             name: 'FACTS_LINK_CLICK'
         },
@@ -127,6 +132,54 @@ let logUIConfigurationObject = {
                     nameForLog: 'rank',
                     sourcer: 'elementAttribute',
                     lookFor: 'data-videoRank',
+                },
+            ],
+        },
+        'image-scroll-right-click': {
+            selector: 'div.image-vertical > span.right a',
+            event: 'click',
+            name: 'IMAGE_SCROLL_CLICK',
+            metadata: [
+                {
+                    nameForLog: 'side',
+                    sourcer: 'elementAttribute',
+                    lookFor: 'alt',
+                },
+            ],
+        },
+        'image-scroll-left-click': {
+            selector: 'div.image-vertical > span.left a',
+            event: 'click',
+            name: 'IMAGE_SCROLL_CLICK',
+            metadata: [
+                {
+                    nameForLog: 'side',
+                    sourcer: 'elementAttribute',
+                    lookFor: 'alt',
+                },
+            ],
+        },
+        'video-scroll-right-click': {
+            selector: 'div.video-vertical > span.right a',
+            event: 'click',
+            name: 'VIDEO_SCROLL_CLICK',
+            metadata: [
+                {
+                    nameForLog: 'side',
+                    sourcer: 'elementAttribute',
+                    lookFor: 'alt',
+                },
+            ],
+        },
+        'video-scroll-left-click': {
+            selector: 'div.video-vertical > span.left a',
+            event: 'click',
+            name: 'VIDEO_SCROLL_CLICK',
+            metadata: [
+                {
+                    nameForLog: 'side',
+                    sourcer: 'elementAttribute',
+                    lookFor: 'alt',
                 },
             ],
         },
@@ -208,6 +261,18 @@ let logUIConfigurationObject = {
                     nameForLog: 'rank',
                     sourcer: 'elementAttribute',
                     lookFor: 'data-webRank',
+                },
+            ],
+        },
+        'web-scroll-click': {
+            selector: 'div.grid-container > div.web-results > div.results-container > span.scroll-controller span a img',
+            event: 'click',
+            name: 'WEB_SCROLL_CLICK',
+            metadata: [
+                {
+                    nameForLog: 'side',
+                    sourcer: 'elementAttribute',
+                    lookFor: 'alt',
                 },
             ],
         },

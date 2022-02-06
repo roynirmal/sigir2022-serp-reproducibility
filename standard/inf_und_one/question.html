@@ -97,7 +97,8 @@
             var pages = JSON.parse(localStorage.getItem('pages'))
             
             if (pages.length == 0) {
-                window.location.href = "https://tudelft.fra1.qualtrics.com/jfe/form/SV_8vrO8uhievU7IDc"
+                let prolificID = sessionStorage.getItem("prolific-id");
+                 window.location.href = "https://tudelft.fra1.qualtrics.com/jfe/form/SV_8vrO8uhievU7IDc?prolificID=" + prolificID
             } else {
                 var mynum_index = Math.floor(Math.random() * pages.length); 
                 // console.log("LOG", pages[mynum_index] + '/template.html')
