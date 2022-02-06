@@ -106,6 +106,13 @@ div.entity-card > h3 {
         right: 15px;
         color: #808080;
     }
+    div.entity-card > img {
+        
+        margin: 5px 0 0 13px;
+
+        max-width: 200px;
+        /* color: #808080; */
+    }
 
 div.entity-card > span.subtitle {
     display: block;
@@ -120,7 +127,7 @@ div.entity-card > span.subtitle {
 div.entity-card > span.blurb {
     display: block;
     margin: 13px 0 13px 0;
-    font-size: 20px;
+    font-size: 15px;
     line-height: 22.12px;
     word-wrap: break-word;
     color: #4D5156;

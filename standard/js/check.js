@@ -10,6 +10,9 @@ let taskPageMapping = {
     'inf_und_one': 'http://lambda2.ewi.tudelft.nl/inf_und_one/template.html',
     'inf_und_two': 'http://lambda2.ewi.tudelft.nl/inf_und_two/template.html',
     'inf_und_three': 'http://lambda2.ewi.tudelft.nl/inf_und_three/template.html',
+    'nav_one': 'http://lambda2.ewi.tudelft.nl/nav_one/template.html',
+    'nav_two': 'http://lambda2.ewi.tudelft.nl/nav_two/template.html',
+    'nav_three': 'http://lambda2.ewi.tudelft.nl/nav_three/template.html',
 };
 
 document.addEventListener("DOMContentLoaded", function(){
