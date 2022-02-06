@@ -230,7 +230,7 @@ div.grid-container > div.video-grid > ul > li >  a > h3 {
     width: 100%; */
 /* } */
 
-div.grid-container > div.video-grid > ul > li > span > iframe {
+div.grid-container > div.video-grid > ul > li  > iframe {
     height: 250px;   
     object-fit: cover;
     width: 100%;
