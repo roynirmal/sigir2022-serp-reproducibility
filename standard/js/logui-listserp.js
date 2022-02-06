@@ -47,7 +47,7 @@ let logUIConfigurationObject = {
             ],
         },
         'next-click': {
-            selector: 'header > div ul.right button',  // Maybe we can make this a bit cleaner. Need to make this bubble up for capturing the tab name, metadata!
+            selector: 'header > div ul.right > button',  // Maybe we can make this a bit cleaner. Need to make this bubble up for capturing the tab name, metadata!
             event: 'click',
             name: 'NEXT_CLICK'
         },
@@ -65,6 +65,28 @@ let logUIConfigurationObject = {
         },
         'facts-click': {
             selector: 'div.answer-card > div.flex-container > div.left-container > a',
+            event: 'click',
+            name: 'FACTS_LINK_CLICK'
+        },
+        'entity-hover': {
+            selector: 'div.entity-card',
+            event: 'mouseHover',
+            properties: {
+                mouseenter: {
+                    name: 'FACTS_HOVERIN',
+                },
+                mouseleave: {
+                    name: 'FACTS_HOVEROUT',
+                }
+            },
+        },
+        'entity-wiki-click': {
+            selector: 'div.entity-card > span.blurb > a',
+            event: 'click',
+            name: 'FACTS_WIKI_CLICK'
+        },
+        'entity-link-click': {
+            selector: 'div.entity-card > span.subtitle > a',
             event: 'click',
             name: 'FACTS_LINK_CLICK'
         },
