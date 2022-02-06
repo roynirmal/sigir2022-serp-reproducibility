@@ -152,6 +152,54 @@ let logUIConfigurationObject = {
                 },
             ],
         },
+        'image-scroll-right-click': {
+            selector: 'div.image-vertical > span.right a',
+            event: 'click',
+            name: 'IMAGE_SCROLL_CLICK',
+            metadata: [
+                {
+                    nameForLog: 'side',
+                    sourcer: 'elementAttribute',
+                    lookFor: 'alt',
+                },
+            ],
+        },
+        'image-scroll-left-click': {
+            selector: 'div.image-vertical > span.left a',
+            event: 'click',
+            name: 'IMAGE_SCROLL_CLICK',
+            metadata: [
+                {
+                    nameForLog: 'side',
+                    sourcer: 'elementAttribute',
+                    lookFor: 'alt',
+                },
+            ],
+        },
+        'video-scroll-right-click': {
+            selector: 'div.video-vertical > span.right a',
+            event: 'click',
+            name: 'VIDEO_SCROLL_CLICK',
+            metadata: [
+                {
+                    nameForLog: 'side',
+                    sourcer: 'elementAttribute',
+                    lookFor: 'alt',
+                },
+            ],
+        },
+        'video-scroll-left-click': {
+            selector: 'div.video-vertical > span.left a',
+            event: 'click',
+            name: 'VIDEO_SCROLL_CLICK',
+            metadata: [
+                {
+                    nameForLog: 'side',
+                    sourcer: 'elementAttribute',
+                    lookFor: 'alt',
+                },
+            ],
+        },
         'web-hover': {
             selector: 'div.result-organic',
             event: 'mouseHover',
