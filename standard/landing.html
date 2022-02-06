@@ -43,7 +43,7 @@
                         <div>
                                 <h2 class="check-list">Welcome to the study!</h2>
                                 <ul class="check-list">
-                                <li>You will be asked to walk through 13 search scenarios, one after the other. Each will have its own information need.</li>
+                                <li>You will be asked to walk through 12 search scenarios, one after the other. Each will have its own information need.</li>
                                 <li>We will provide you with results from the web (documents, images, videos, etc.) as seen on a typical results page.</li>
                                 <li>Your task is to go through the results and find the information pertaining to the given information need.</li>
                                 <li>The information need will be present at the top right of the results page.</li>
@@ -53,7 +53,7 @@
                                 <li>You will be taken to a new page where you type the answer for that particular scenario. Write a short answer (at most 50 words) based on the information you found on the results page.</li>
                                 <li>Answers that are not on topic or do not address the information need will be disqualified.</li>
                                 <li>Once you have written down the answer, click the <strong>Next</strong> button to go to the next search scenario.</li>
-                                <li>After you have gone through all 13 scenarios, we will take you to an exit survey to complete the study.</li>
+                                <li>After you have gone through all 12 scenarios, we will take you to an exit survey to complete the study.</li>
                                 <li><b>Only use the results we provide. You do not need to issue queries in a separate search engine.</b></li>
                                 <li><b>Please avoid the use of your browser’s back button as you go through this experiment.</b></li>
                                 <li>When ready, type in your Prolific ID and click Submit to start the study!
@@ -83,7 +83,7 @@
         // window.location.href = 'template.html';
             // document.getElementById("myButton").onclick   = function() {
             function loader(form) {
-                var pages = new Array('inf_rem_one','inf_rem_two', 'inf_rem_three', 'inf_und_one', 'inf_und_two', 'inf_und_three', 'inf_an_one', 'inf_an_two');
+                var pages = new Array('inf_rem_one','inf_rem_two', 'inf_rem_three', 'inf_und_one', 'inf_und_two', 'inf_und_three', 'inf_an_one', 'inf_an_two', 'inf_an_three', 'nav_one');
                 localStorage.setItem('pages', JSON.stringify(pages))
                 sessionStorage.setItem('prolific-id', form.prolificID.value)
                 sessionStorage.setItem('serp', 'grid_serp')
