@@ -242,7 +242,7 @@ let logUIConfigurationObject = {
                 },
             ],
         },
-        'image-tab-click': {
+        'image-tab-link-click': {
             selector: 'div.grid-container > div.image-grid > ul > li > a > p',
             event: 'click',
             name: 'IMAGE_TAB_CLICK',
