@@ -42,34 +42,47 @@
                 <div class="grid-container">
                         <div>
                                 <h2 class="check-list">Welcome to the study!</h2>
-                                <ul class="check-list">
-                                <li>You will be asked to walk through 12 search scenarios, one after the other. Each will have its own information need.</li>
-                                <li>The information need will be present at the top right of the results page.</li>
-                                <li>For each information need, other crowdworkers have provided us with the query that they would issue. You will see the query in the search box at the top of the page. </li>
-                                <li>For this study, you won't be able to change the query.</li>
-                                <li>We will provide you with results from the web (documents, images, videos, etc.) as seen on a typical results page for each query.</li>
-                                <li>Your task is to go through the results and find the information pertaining to the given information need.</li>
-                                <li>You can open the results (click links) and take as long as you need to find the information. Results will open in a new tab.</li>
-                                <li>Once you have <strong>finished reading</strong>, close the tab to return to the results page we provide.</li>
-                                <li>Once you are <b>satisfied</b> that you have found enough information click the <strong>Answer</strong> button at the top of the results page. </li>
-                                <li>You will be taken to a new page where you type the answer for that particular scenario. Write a short answer (at most 50 words) based on the information you found on the results page.</li>
-                                <li>Answers that are not on topic or do not address the information need will be disqualified.</li>
-                                <li>Once you have written down the answer, click the <strong>Next Scenario</strong> button to go to the next search scenario.</li>
-                                <li>After you have gone through all 12 scenarios, we will take you to an exit survey to complete the study.</li>
-                                <li><b> We request you to only use the results we provide. You do not need to issue queries in a separate search engine.</b></li>
-                                <li><b>Please avoid the use of your browser's back button as you go through this experiment.</b></li>
-                                <li>When ready, type in your Prolific ID and click Submit to start the study!
-                                        <form method="GET" onsubmit="loader(this);" style="margin: 10px;">   
-                                            <input type="text" name="prolificID" style="width: 250px; line-height: 28px; padding: 0 5px 0 5px; margin-bottom: 30px;" required />
-                                            <input type="submit" value="Submit" style="margin: 1.5rem 0 0 5px; line-height: 28px; padding: 0 5px 0 5px;" />
-                                        </form>
-                                    </li>
+                                
+                                <ul style="padding: 20px 0 0 100px;">
+                                        <li>
+                                                <span id="goodResolution" style="background-color: #2FC987;"><strong>Your browser's resolution is good.</strong>
+                                                Please keep your browser window at this resolution through the duration of the study. <strong>If you resize your browser during the study, we may have to cancel your participation.</strong></span>
+                                                <span id="badResolution" style="background-color: #F16034"><strong>Please maximise your browser's window.</strong>
+                                                Your browser's window is not big enough to run this study. <strong>If you have resized and you still see this message, try refreshing your browser. If you're running Windows and you still see this message, make sure your display scaling is set to 100% (Settings > System > Display > Scale and Layout).</strong></span>
+                                        </li>
                                 </ul>
-                        
+                                <ul class="check-list" id="ready">
+                                    <li>In this study, we will provide you with results page that look like this:
+                                        <img style="width: 800px; height: 400px; margin-top: 10px;" src="img/grid_landing.png"></img>
+                                    </li>
+                                    <li>You will be asked to walk through 12 search scenarios, one after the other. Each will have its own information need.</li>
+                                    <li>The information need will be present at the top right of the results page (marked 1 in the figure above).</li>
+                                    <li>For each information need, other crowdworkers have provided us with the query that they would issue. You will see the query in the search box at the top of the page (marked 2 in the figure above). </li>
+                                    <li>For this study, you won't be able to change the query.</li>
+                                    <li>We will provide you with results (marked 3 in the figure above) from the web (documents, images, videos, etc.) as seen on a typical results page for each query.</li>
+                                    <li>Your task is to go through the results and find the information pertaining to the given information need.</li>
+                                    <li>You can open the results (click links) and take as long as you need to find the information. Results will open in a new tab.</li>
+                                    <li>Once you have <strong>finished reading</strong>, close the tab to return to the results page we provide.</li>
+                                    <li>Once you are <b>satisfied</b> that you have found enough information click the <strong>Answer</strong> (marked 4 in the figure above) button at the top of the results page. </li>
+                                    <li>You will be taken to a new page where you type the answer for that particular scenario. Write a short answer (at most 50 words) based on the information you found on the results page.</li>
+                                    <li>Answers that are not on topic or do not address the information need will be disqualified.</li>
+                                    <li>Once you have written down the answer, click the <strong>Next Scenario</strong> button to go to the next search scenario.</li>
+                                    <li>After you have gone through all 12 scenarios, we will take you to an exit survey to complete the study.</li>
+                                    <li><b> We request you to only use the results we provide. You do not need to issue queries in a separate search engine.</b></li>
+                                    <li><b>Please avoid the use of your browser's back button as you go through this experiment.</b></li>
+    
+                                    <li >When ready, type in your Prolific ID and click Submit to start the study!
+                                            <form method="GET" onsubmit="loader(this);" style="margin: 10px;">   
+                                                <input type="text" name="prolificID" style="width: 250px; line-height: 28px; padding: 0 5px 0 5px; margin-bottom: 30px;" required />
+                                                <input type="submit" value="Submit" style="margin: 1.5rem 0 0 5px; line-height: 28px; padding: 0 5px 0 5px;" />
+                                            </form>
+                                        </li>
+                                </ul>
+                        </div>
                         </div>
 
                     </div> 
-
+                </main>
         <!-- Include script for scrolling functionality on necessary components -->
         <script type="text/javascript">
             let currentPage="landing"
@@ -97,6 +110,48 @@
                 pages.splice(mynum_index , 1)
                 localStorage.setItem('pages', JSON.stringify(pages))
                 // return false;
+            }
+        </script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function(){
+                let form = document.querySelector('form');
+                form.addEventListener('submit', formSubmitCheck);
+
+                resolutionCheck();
+                setInterval(resolutionCheck, 500);
+            });
+
+            function resolutionCheck() {
+                let availHeight = window.screen.availHeight;
+                let outerHeight = window.outerHeight;
+                let availWidth = window.screen.availWidth;
+                let outerWidth = window.outerWidth;
+
+                let good = document.querySelector('#goodResolution');
+                let bad = document.querySelector('#badResolution');
+                let readyEl = document.querySelector('#ready');
+
+                if ((availHeight - outerHeight > 10) | (availWidth - outerWidth > 10)){
+                    bad.style.display = 'inline';
+                    good.style.display = 'none';
+                    readyEl.style.display = 'none';
+                    // console.log("bad")
+                    return false;
+
+                } else {
+                    bad.style.display = 'none';
+                    good.style.display = 'inline';
+                    readyEl.style.display = 'block'
+                    // readyEl.style.display = 'inline';
+                    // console.log("good")
+                    return true;
+                }
+            }
+
+            function formSubmitCheck(event) {
+                if (!resolutionCheck()) {
+                    event.preventDefault();
+                }
             }
         </script>
     
