@@ -4,7 +4,7 @@ let logUIConfigurationObject = {
     logUIConfiguration: {
         endpoint: 'ws://logui.ewi.tudelft.nl/ws/endpoint/',
         authorisationToken: null,
-        verbose: true, // Turn this off when the experiment is running properly! Set it to false.
+        verbose: false, // Turn this off when the experiment is running properly! Set it to false.
     },
     applicationSpecificData: {
         userID: null, // To be overwritten by the driver script.
@@ -13,6 +13,10 @@ let logUIConfigurationObject = {
     },
     browserEvents: {
         trackCursor: false,
+        contextMenu: true,
+        pageFocus: true,
+        pageResize: true,
+        eventsWhileScrolling: false,
     },
     trackingConfiguration: {
         'tab-click': {

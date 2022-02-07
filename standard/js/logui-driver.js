@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function(){
     }
         
 
-    if (!prolificID) {
+    if (!prolificID & serp) {
         alert("NOOOOO");
         window.location = '/landing.html'; // Redirect if there is no ID.
     }
