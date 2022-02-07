@@ -269,6 +269,18 @@ let logUIConfigurationObject = {
                 },
             ],
         },
+        'web-title-span-click': {
+            selector: 'div.result-organic span.url',
+            event: 'click',
+            name: 'WEB_TITLE_CLICK',
+            metadata: [
+                {
+                    nameForLog: 'rank',
+                    sourcer: 'elementAttribute',
+                    lookFor: 'data-webRank',
+                },
+            ],
+        },
         'image-tab-hover': {
             selector: 'div.grid-container > div.image-grid > ul > li > a > img',
             event: 'mouseHover',
