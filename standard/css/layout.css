@@ -78,10 +78,9 @@ header > div {
             border-left: 1px solid #DFE1E5;
             padding: 4px 0 4px 10px;
             margin: 0 5px 0 10px;
-            color: #2F73E8;
+            color: #C0C0C0;
             font-size: 18px;
             background-color: transparent;
-
         }
     
     header > div > ul.tabs {
@@ -144,9 +143,12 @@ header > div {
             text-align: right;
         }
         header > div ul.right > span.info-need {
+            display: inline-block;
             font-size: 15px;
             line-height: 17px;
+            width: auto;
             word-wrap: break-word;
+            color: #FF0000;
         }
 
         header > div ul.right > li {
@@ -175,14 +177,14 @@ header > div {
         header > div ul.right > button {
             padding: 3px 10px 3px 10px;
             border-radius: 8px;
-            background-color: #202123;
-            color: #FFFFFF;
+            background: #EBEBEB;
+            color: #000;
             font-family: 'Product Sans Regular', Arial, Helvetica, sans-serif;
         }
 
         header > div ul.right > button:hover {
-            background: #EBEBEB;
-            color: #000;
+            background-color: #202123;
+            color: #FFFFFF;
             cursor: pointer;
         }
 
@@ -223,16 +225,6 @@ main > div {
         flex-shrink: 0;
     }
 
-    main > div > div > div.right-container  > span.title, main > div > div > div.left-container  > span.title {
-        margin-bottom: 10px;
-        display: inline-block;
-        font-size: 22px;
-        height: 28px;
-        font-weight: normal;
-        font-family: 'Product Sans Regular', Arial, Helvetica, sans-serif;
-        color: #202124;
-    }
-    
     /* For each item on the left rail, add a gap at the bottom */
     main > div > div > div.left-container > div {
         margin-bottom: 35px;
