@@ -2,7 +2,8 @@ document.addEventListener("DOMContentLoaded", function(){
     let screenWidth = window.screen.width;
     let screenHeight = window.screen.height;
 
-    let refreshLink = null;
+    let header = document.querySelector('h1');
+    let message = document.querySelector('span');
     // const browser = Bowser.getParser(window.navigator.userAgent);
     // const isValidBrowser = browser.satisfies({
     // // or in general
