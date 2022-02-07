@@ -52,7 +52,7 @@
                                         </li>
                                 </ul>
                                 <ul class="check-list" id="ready">
-                                    <li>In this study, we will provide you with results page that look like this:
+                                    <li>In this study, we will provide you with results pages that look like this:
                                         <img style="width: 800px; height: 400px; margin-top: 10px;" src="img/grid_landing.png"></img>
                                     </li>
                                     <li>You will be asked to walk through 12 search scenarios, one after the other. Each will have its own information need.</li>
@@ -88,6 +88,13 @@
             let currentPage="landing"
         </script>
         <script type="text/javascript" src="js/check.js"></script>
+        <script type="text/javascript" src="js/logui.bundle.js"></script>
+
+         <!-- The config object, specific for the page you are loading -->
+         <script type="text/javascript" src="js/logui-gridserp.js"></script>
+ 
+         <!-- The "Driving script" - that controls LogUI -->
+         <script type="text/javascript" src="js/logui-driver.js"></script>
         <!-- <script type="text/javascript" src="js/web_scroll.js"></script> -->
         <!-- <script type="text/javascript" src="js/scroll.js"></script> -->
         <script type="text/javascript">
@@ -110,6 +117,13 @@
                 pages.splice(mynum_index , 1)
                 localStorage.setItem('pages', JSON.stringify(pages))
                 // return false;
+                LogUI.logCustomMessage({
+                     name: 'SESSION_START',
+                     metadata: {
+                         user: form.prolificID.value,
+                         // status: playbackStatus,
+                     },
+                 });
             }
         </script>
         <script>
