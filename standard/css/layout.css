@@ -267,3 +267,11 @@ main > div {
         column-gap: 60px;
     }
 }
+
+.js-web-scrollable > span.scroll-controller, .js-scrollable > span.right {
+    background: linear-gradient(90deg, rgba(255,255,255,0), rgba(245,245,247,1));
+}
+
+.js-web-scrollable > span.scroll-controller.left, .js-scrollable > span.left {
+    background: linear-gradient(90deg, rgba(245,245,247,1), rgba(255,255,255,0));
+}
