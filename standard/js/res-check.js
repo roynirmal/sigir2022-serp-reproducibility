@@ -1,14 +1,8 @@
 document.addEventListener("DOMContentLoaded", function(){
     let screenWidth = window.screen.width;
     let screenHeight = window.screen.height;
-    let viewportWidth = window.innerWidth;
-    let viewportHeight = window.innerHeight;
-
-    let header = document.querySelector('h1');
-    let message = document.querySelector('span');
 
     let refreshLink = null;
-    let launchLink = null;
 
     if (screenWidth < 1920 || screenHeight < 1080) {
         header.innerText = "Insufficient Screen Resolution";
@@ -22,26 +16,7 @@ document.addEventListener("DOMContentLoaded", function(){
         refreshLink = document.querySelector('a#refresh');
     }
     else {
-        header.innerText = "Launch the Study";
-        message.innerHTML = `
-            <p>Our study requires you to launch it in a new popup window.</p>
-            <p>Please <strong><a id="launch">click here</a></strong> to launch the study. It will open in a new popup of a certain size.</p>
-            <p>Please try not to resize this popup for the duration of the experiment; we want to keep the size as consistent as possible.</p>
-        `;
-
-        launchLink = document.querySelector('a#launch');
-    }
-
-    if (refreshLink) {
-        refreshLink.addEventListener('click', function() {
-            window.location.reload();
-        });
-    }
-
-    if (launchLink) {
-        launchLink.addEventListener('click', function() {
-            window.open('landing.html', 'Search Experiment', 'innerWidth=1200,innerHeight=900,screenx=50,screeny=50,popup=yes,resizable=false');
-        });
+        window.location = 'landing.html';
     }
 
 });

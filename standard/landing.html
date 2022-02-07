@@ -58,7 +58,11 @@
                                 <li>After you have gone through all 12 scenarios, we will take you to an exit survey to complete the study.</li>
                                 <li><b> We request you to only use the results we provide. You do not need to issue queries in a separate search engine.</b></li>
                                 <li><b>Please avoid the use of your browser's back button as you go through this experiment.</b></li>
-                                <li>When ready, type in your Prolific ID and click Submit to start the study!
+                                <li>
+                                    <span id="badResolution">BAD RESOLUTION</span>
+                                    <span id="goodResolution">GOOD RESOLUTION</span>
+                                </li>
+                                <li id="ready">When ready, type in your Prolific ID and click Submit to start the study!
                                         <form method="GET" onsubmit="loader(this);" style="margin: 10px;">   
                                             <input type="text" name="prolificID" style="width: 250px; line-height: 28px; padding: 0 5px 0 5px; margin-bottom: 30px;" required />
                                             <input type="submit" value="Submit" style="margin: 1.5rem 0 0 5px; line-height: 28px; padding: 0 5px 0 5px;" />
@@ -97,6 +101,45 @@
                 pages.splice(mynum_index , 1)
                 localStorage.setItem('pages', JSON.stringify(pages))
                 // return false;
+            }
+        </script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function(){
+                let form = document.querySelector('form');
+                form.addEventListener('submit', formSubmitCheck);
+
+                resolutionCheck();
+                setInterval(resolutionCheck, 500);
+            });
+
+            function resolutionCheck() {
+                let availHeight = window.screen.availHeight;
+                let outerHeight = window.outerHeight;
+
+                let good = document.querySelector('#goodResolution');
+                let bad = document.querySelector('#badResolution');
+                let readyEl = document.querySelector('#ready');
+
+                if ((availHeight - outerHeight > 10)){
+                    bad.style.display = 'inline';
+                    good.style.display = 'none';
+                    readyEl.style.display = 'none';
+
+                    return false;
+
+                } else {
+                    bad.style.display = 'none';
+                    good.style.display = 'inline';
+                    readyEl.style.display = 'inline';
+
+                    return true;
+                }
+            }
+
+            function formSubmitCheck(event) {
+                if (!resolutionCheck()) {
+                    event.preventDefault();
+                }
             }
         </script>
     
