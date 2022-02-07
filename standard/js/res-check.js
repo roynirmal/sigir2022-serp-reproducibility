@@ -3,8 +3,22 @@ document.addEventListener("DOMContentLoaded", function(){
     let screenHeight = window.screen.height;
 
     let refreshLink = null;
+    // const browser = Bowser.getParser(window.navigator.userAgent);
+    // const isValidBrowser = browser.satisfies({
+    // // or in general
+    // chrome: ">=47",
+    // firefox: ">=50"
+    // });
 
-    if (screenWidth < 1920 || screenHeight < 1080) {
+    // if(!isValidBrowser){
+    //    return (<div>
+    //        <h3>Your browser does not meet our requriement:
+    //            Google Chrome version 47 (or higher) and Mozilla Firefox version 50 (or higher).
+    //            Please upgrade your browser to take part in our study</h3>
+    //    </div>)
+    // } 
+
+    if (screenWidth < 1000 || screenHeight < 500) {
         header.innerText = "Insufficient Screen Resolution";
         message.innerHTML = `
             <p>We've detected that your display's resolution is currently set to <strong>` + screenWidth + `x` + screenHeight + `</strong>.</p>

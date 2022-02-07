@@ -42,7 +42,14 @@
                 <div class="grid-container">
                         <div>
                                 <h2 class="check-list">Welcome to the study!</h2>
+                                
                                 <ul class="check-list">
+                                        <li>
+                                                <span id="goodResolution" style="background-color: #2FC987;"><strong>Your browser's resolution is good.</strong>
+                                                Please keep your browser window at this resolution through the duration of the study. <strong>If you resize your browser during the study, we may have to cancel your participation.</strong></span>
+                                                <span id="badResolution" style="background-color: #F16034"><strong>Please maximise your browser's window.</strong>
+                                                Your browser's window is not big enough to run this study. <strong>If you have resized and you still see this message, try refreshing your browser. If you're running Windows and you still see this message, make sure your display scaling is set to 100% (Settings > System > Display > Scale and Layout).</strong></span>
+                                        </li>
                                 <li>You will be asked to walk through 12 search scenarios, one after the other. Each will have its own information need.</li>
                                 <li>The information need will be present at the top right of the results page.</li>
                                 <li>For each information need, other crowdworkers have provided us with the query that they would issue. You will see the query in the search box at the top of the page. </li>
@@ -58,10 +65,7 @@
                                 <li>After you have gone through all 12 scenarios, we will take you to an exit survey to complete the study.</li>
                                 <li><b> We request you to only use the results we provide. You do not need to issue queries in a separate search engine.</b></li>
                                 <li><b>Please avoid the use of your browser's back button as you go through this experiment.</b></li>
-                                <li>
-                                    <span id="badResolution">BAD RESOLUTION</span>
-                                    <span id="goodResolution">GOOD RESOLUTION</span>
-                                </li>
+  
                                 <li id="ready">When ready, type in your Prolific ID and click Submit to start the study!
                                         <form method="GET" onsubmit="loader(this);" style="margin: 10px;">   
                                             <input type="text" name="prolificID" style="width: 250px; line-height: 28px; padding: 0 5px 0 5px; margin-bottom: 30px;" required />
@@ -69,11 +73,11 @@
                                         </form>
                                     </li>
                                 </ul>
-                        
+                        </div>
                         </div>
 
                     </div> 
-
+                </main>
         <!-- Include script for scrolling functionality on necessary components -->
         <script type="text/javascript">
             let currentPage="landing"
