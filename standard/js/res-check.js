@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function(){
     //    </div>)
     // } 
 
-    if (screenWidth < 1000 || screenHeight < 500) {
+    if (screenWidth < 1920 || screenHeight < 1080) {
         header.innerText = "Insufficient Screen Resolution";
         message.innerHTML = `
             <p>We've detected that your display's resolution is currently set to <strong>` + screenWidth + `x` + screenHeight + `</strong>.</p>
