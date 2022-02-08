@@ -4,7 +4,7 @@ let logUIConfigurationObject = {
     logUIConfiguration: {
         endpoint: 'ws://logui.ewi.tudelft.nl/ws/endpoint/',
         authorisationToken: null,
-        verbose: false, // Turn this off when the experiment is running properly! Set it to false.
+        verbose: true, // Turn this off when the experiment is running properly! Set it to false.
     },
     applicationSpecificData: {
         userID: null, // To be overwritten by the driver script.
@@ -338,7 +338,7 @@ let logUIConfigurationObject = {
                 {
                     nameForLog: 'rank',
                     sourcer: 'elementAttribute',
-                    lookFor: 'data-videoRank',
+                    lookFor: 'id',
                 },
             ],
         },
