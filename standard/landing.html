@@ -147,7 +147,7 @@
                 let bad = document.querySelector('#badResolution');
                 let readyEl = document.querySelector('#ready');
 
-                if ((availHeight - outerHeight > 10) | (availWidth - outerWidth > 10)){
+                if (availHeight - outerHeight > 10){
                     bad.style.display = 'inline';
                     good.style.display = 'none';
                     readyEl.style.display = 'none';
