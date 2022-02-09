@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function(){
     logUIConfigurationObject.applicationSpecificData.userID = prolificID;
     logUIConfigurationObject.applicationSpecificData.serp = serp;
     logUIConfigurationObject.applicationSpecificData.task = task;
-    logUIConfigurationObject.logUIConfiguration.authorisationToken = 'eyJ0eXBlIjoibG9nVUktYXV0aG9yaXNhdGlvbi1vYmplY3QiLCJhcHBsaWNhdGlvbklEIjoiZDMxZmYyM2EtYzI4ZS00ZDczLWE2YTctZmExMzRhYmVkMzE1IiwiZmxpZ2h0SUQiOiJkN2ViNWFjZC00OTFiLTQ0MzUtYmE5YS03ZTZmZmVlMWU0ZDEifQ:1nHX7b:SXZwV9QJY17hDZT_be1fAtJVs7YrxPKid4PH6fdVgoo';
+    logUIConfigurationObject.logUIConfiguration.authorisationToken = 'eyJ0eXBlIjoibG9nVUktYXV0aG9yaXNhdGlvbi1vYmplY3QiLCJhcHBsaWNhdGlvbklEIjoiZDMxZmYyM2EtYzI4ZS00ZDczLWE2YTctZmExMzRhYmVkMzE1IiwiZmxpZ2h0SUQiOiIyMzE2NmJmYy1mYzU3LTQ5NGMtODRjZS0yMGE5MmIxZThhZTUifQ:1nHaeQ:O9tIsUR7RLpUs-NPKSzcTpaTAWCEgT0cGJ0ZL4u9f4Y';
     
     LogUI.init(logUIConfigurationObject);
 });
