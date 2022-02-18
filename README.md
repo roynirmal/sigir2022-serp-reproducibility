@@ -28,6 +28,6 @@ node app.js
 
 You should be able to access the study at your browser `http://localhost:8080/`. 
 
-:warning: == Note == 
+:warning: ==Note== 
 - You will need to have [node installed](https://nodejs.org/en/download/) to launch the study. 
 - Your screen size needs to be atleast 1920 * 1080.
