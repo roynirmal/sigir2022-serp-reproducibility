@@ -20,7 +20,7 @@ The repository contains four branches each pertaining to the four SERP types use
 In order to launch the study, using a particular template, clone the repository and checkout to the respective branch. After that, run the `app.js` file using `node`. For example, steps to launch the study in **HG** SERP would like this.
 
 ```
-https://github.com/roynirmal/serp_temp.git
+git clone https://github.com/roynirmal/serp_temp.git
 cd serp_temp
 git checkout grid
 node app.js
