@@ -31,5 +31,5 @@ You should be able to access the study at your browser `http://localhost:8080/`.
 :warning: **Note**
 - You will need to have [node installed](https://nodejs.org/en/download/) to launch the study. 
 - Your screen size needs to be atleast 1920 * 1080.
-- We use [LogUI](http://logui.ewi.tudelft.nl/#/) to log user interactions. The code is already integrated in the scripts. You need to create an user profile, login and create an AuthToken (details on how to do that is mentioned [here]()). You need to change the AuthToken by setting the new token for `logUIConfigurationObject.logUIConfiguration.authorisationToken` inside `./standard/js/logui-driver.js` for the respective branch.
+- We use [LogUI](http://logui.ewi.tudelft.nl/#/) to log user interactions. The code is already integrated in the scripts. You need to create an user profile, login and create an AuthToken (details on how to do that is mentioned [here](https://github.com/logui-framework/server/wiki/First-Run-Guide)). You need to change the AuthToken by setting the new token for `logUIConfigurationObject.logUIConfiguration.authorisationToken` inside `./standard/js/logui-driver.js` for the respective branch.
 
