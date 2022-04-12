@@ -17,9 +17,10 @@ The repository contains four branches each pertaining to the four SERP types use
 
 ## Launching the study :rocket:
 
-In order to launch the study, using a particular template, clone the repository and checkout to the respective branch. After that, run the `app.js` file using `node`. For example, steps to launch the study in **HG** SERP would like this.
+In order to launch the study, using a particular template, clone the repository and checkout to the respective branch. After that, run the `app.js` file using `node`. For example, steps to launch the study in **HG** SERP would like this. We used `npm` version 6.12.1 for our study.
 
 ```
+npm install
 git clone https://github.com/roynirmal/sigir2022-serp-reproducibility.git
 cd serp_temp
 git checkout grid
@@ -29,7 +30,7 @@ node app.js
 You should be able to access the study at your browser `http://localhost:8080/`. 
 
 :warning: **Note**
-- :wrench: You will need to have [node installed](https://nodejs.org/en/download/) to launch the study. 
+- :wrench: You will need to have [node installed](https://nodejs.org/en/download/)(we used v12.1.0 for our experiments) to launch the study. 
 - :tv: Your screen size needs to be atleast 1920 * 1080.
 - :microscope: We use [LogUI](http://logui.ewi.tudelft.nl/#/) to log user interactions. The code is already integrated in the scripts. You need to create an user profile, login and create an AuthToken (details on how to do that is mentioned [here](https://github.com/logui-framework/server/wiki/First-Run-Guide)). You need to change the AuthToken by setting the new token for `logUIConfigurationObject.logUIConfiguration.authorisationToken` inside `./standard/js/logui-driver.js` for the respective branch (aka each epxerimental condition). 
 
